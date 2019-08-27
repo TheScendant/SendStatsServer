@@ -1,6 +1,6 @@
 import startPos0 from "./cachedJSONs/startPos0.js";
 import startPos200 from "./cachedJSONs/startPos200.js";
-import oneRoute from './cachedJSONs/oneRoute.js';
+import oneTick from './cachedJSONs/oneTick.js/index.js';
 import cachedAllSends from './cachedJSONs/sends.js'
 import utilities from "./utilities.js";
 const { fetchAndJsonify } = utilities;
@@ -89,7 +89,7 @@ async function localInit() {
   const allSends = [];
   //allSends.push(...startPos0.ticks);
   //allSends.push(...startPos200.ticks);
-  //allSends.push(...oneRoute.ticks);
+  //allSends.push(...oneTick.ticks);
   allSends.push(...cachedAllSends);
 
   const finalMap = new Map();
