@@ -92,12 +92,13 @@ async function localInit() {
   //allSends.push(...oneRoute.ticks);
   allSends.push(...cachedAllSends);
 
-  const sendMap = new Map();
+  const finalMap = new Map();
   for (const send of allSends) {
-    sendMap.set(send.routeId, send);
+    finalMap.set(send.routeId, send);
   }
 
-  // console.warn(sendMap.forEach((value, key) => console.warn(`${value.name} is routeId ${value.routeId} and rated ${value.rating}`)));
+  // console.warn(finalMap.forEach((value, key) => console.warn(`${value.name} is routeId ${value.routeId} and rated ${value.rating}`)));
+  return finalMap;
 }
 
 async function newtworkInit() {
@@ -109,6 +110,20 @@ async function newtworkInit() {
   }
   const finalMap = await getAllSendData(allSends, sendMap);
   // console.warn(finalMap.forEach((value, key) => console.warn(value)));
+  return finalMap;
 
 }
-localInit();
+
+async function init() {
+  const finalMap = await localInit();
+  // const finalMap = await newtworkInit();
+  const gradeMap = new Map();
+
+  finalMap.forEach((send) => {
+    let currCount = gradeMap.get(send.rating);
+    let count = (currCount) ? currCount+1 : 1;
+    gradeMap.set(send.rating, count);
+  });
+  console.warn(gradeMap.forEach((value, key) => console.warn(`${key}: ${value}`)));
+}
+init();
