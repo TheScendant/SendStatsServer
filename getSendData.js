@@ -1,6 +1,6 @@
-import startPos0 from "./startPos0.js";
-import startPos200 from "./startPos200.js";
-import oneRoute from './oneRoute.js';
+import startPos0 from "./cachedJSONs/startPos0.js";
+import startPos200 from "./cachedJSONs/startPos200.js";
+import oneRoute from './cachedJSONs/oneRoute.js';
 import utilities from "./utilities.js";
 const { fetchAndJsonify } = utilities;
 import url from './urls.js';
@@ -85,11 +85,11 @@ async function getAllSends() {
 
 async function init() {
 
-  const allSends = [];
-  allSends.push(...startPos0.ticks);
-  allSends.push(...startPos200.ticks);
+  // const allSends = [];
+  // allSends.push(...startPos0.ticks);
+  // allSends.push(...startPos200.ticks);
   // allSends.push(...oneRoute.ticks);
-  // const allSends = await getAllSends(); 
+  const allSends = await getAllSends(); 
 
   // console.warn(allSends);
 
