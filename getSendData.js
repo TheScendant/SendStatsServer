@@ -1,6 +1,7 @@
 import startPos0 from "./cachedJSONs/startPos0.js";
 import startPos200 from "./cachedJSONs/startPos200.js";
 import oneRoute from './cachedJSONs/oneRoute.js';
+import cachedAllSends from './cachedJSONs/sends.js'
 import utilities from "./utilities.js";
 const { fetchAndJsonify } = utilities;
 import url from './urls.js';
@@ -83,23 +84,31 @@ async function getAllSends() {
   return allSends;
 }
 
-async function init() {
+async function localInit() {
 
-  // const allSends = [];
-  // allSends.push(...startPos0.ticks);
-  // allSends.push(...startPos200.ticks);
-  // allSends.push(...oneRoute.ticks);
-  const allSends = await getAllSends(); 
-
-  // console.warn(allSends);
+  const allSends = [];
+  //allSends.push(...startPos0.ticks);
+  //allSends.push(...startPos200.ticks);
+  //allSends.push(...oneRoute.ticks);
+  allSends.push(...cachedAllSends);
 
   const sendMap = new Map();
   for (const send of allSends) {
     sendMap.set(send.routeId, send);
   }
 
-  const finalMap = await getAllSendData(allSends, sendMap);
-  // console.warn(finalMap.forEach((value, key) => console.warn(`${value.name} is routeId ${value.routeId} and rated ${value.rating}`)));
-  console.warn(finalMap.forEach((value, key) => console.warn(value)));
+  // console.warn(sendMap.forEach((value, key) => console.warn(`${value.name} is routeId ${value.routeId} and rated ${value.rating}`)));
 }
-init();
+
+async function newtworkInit() {
+  const allSends = await getAllSends();
+  // console.warn(allSends);
+  const sendMap = new Map();
+  for (const send of allSends) {
+    sendMap.set(send.routeId, send);
+  }
+  const finalMap = await getAllSendData(allSends, sendMap);
+  // console.warn(finalMap.forEach((value, key) => console.warn(value)));
+
+}
+localInit();

@@ -1,4 +1,4 @@
-export default {
+export default [{
   routeId: 105753952,
   date: '2019-08-25',
   pitches: 1,
@@ -10,7 +10,7 @@ export default {
   userRating: '',
   name: 'Popular Demand',
   rating: '5.10c'
-}
+},
 {
   routeId: 105757699,
   date: '2019-08-18',
@@ -23,7 +23,7 @@ export default {
   userRating: '',
   name: 'PMT',
   rating: '5.10c'
-}
+},
 {
   routeId: 105754246,
   date: '2019-08-18',
@@ -36,7 +36,7 @@ export default {
   userRating: '',
   name: 'PMS',
   rating: '5.10c'
-}
+},
 {
   routeId: 105756046,
   date: '2019-08-17',
@@ -49,7 +49,7 @@ export default {
   userRating: '',
   name: 'Feline',
   rating: '5.11b'
-}
+},
 {
   routeId: 105753940,
   date: '2019-08-03',
@@ -62,7 +62,7 @@ export default {
   userRating: '',
   name: 'Cold Cuts',
   rating: '5.11a'
-}
+},
 {
   routeId: 105762684,
   date: '2019-07-27',
@@ -75,7 +75,7 @@ export default {
   userRating: '',
   name: 'Unfamiliar Strangers',
   rating: '5.9+'
-}
+},
 {
   routeId: 105758080,
   date: '2019-07-27',
@@ -88,7 +88,7 @@ export default {
   userRating: '5.12a',
   name: 'Days of Future Passed aka Our Future Has Passed',
   rating: '5.12a'
-}
+},
 {
   routeId: 105761268,
   date: '2019-07-06',
@@ -101,7 +101,7 @@ export default {
   userRating: '',
   name: 'Marquis de Sade',
   rating: '5.10c'
-}
+},
 {
   routeId: 105862660,
   date: '2019-07-06',
@@ -114,7 +114,7 @@ export default {
   userRating: '',
   name: 'Sword In The Stone',
   rating: '5.9+'
-}
+},
 {
   routeId: 105761262,
   date: '2019-07-06',
@@ -127,7 +127,7 @@ export default {
   userRating: '',
   name: 'Slayer',
   rating: '5.10b'
-}
+},
 {
   routeId: 105758044,
   date: '2019-07-04',
@@ -140,7 +140,7 @@ export default {
   userRating: '',
   name: 'Pete and Benz',
   rating: '5.7'
-}
+},
 {
   routeId: 106248461,
   date: '2019-06-15',
@@ -153,7 +153,7 @@ export default {
   userRating: '',
   name: 'Costello',
   rating: '5.11a'
-}
+},
 {
   routeId: 106231707,
   date: '2019-06-15',
@@ -166,7 +166,7 @@ export default {
   userRating: '',
   name: 'Carlin',
   rating: '5.10a'
-}
+},
 {
   routeId: 106252682,
   date: '2019-06-15',
@@ -179,7 +179,7 @@ export default {
   userRating: '',
   name: 'Sellers',
   rating: '5.10a/b'
-}
+},
 {
   routeId: 106175311,
   date: '2019-06-09',
@@ -192,7 +192,7 @@ export default {
   userRating: '',
   name: 'Northwest Arete',
   rating: 'V1'
-}
+},
 {
   routeId: 106183208,
   date: '2019-06-09',
@@ -205,7 +205,7 @@ export default {
   userRating: '',
   name: 'Barb Wire',
   rating: 'V2'
-}
+},
 {
   routeId: 105792476,
   date: '2019-06-09',
@@ -218,7 +218,7 @@ export default {
   userRating: '',
   name: 'Stalactite',
   rating: 'V2'
-}
+},
 {
   routeId: 105792465,
   date: '2019-06-09',
@@ -231,7 +231,7 @@ export default {
   userRating: '',
   name: 'The Wave',
   rating: 'V2'
-}
+},
 {
   routeId: 114195097,
   date: '2019-04-14',
@@ -244,7 +244,7 @@ export default {
   userRating: '',
   name: 'Molotov Cockfight',
   rating: '5.9+'
-}
+},
 {
   routeId: 114195105,
   date: '2019-04-14',
@@ -257,7 +257,7 @@ export default {
   userRating: '',
   name: 'No Special Talent',
   rating: '5.10d'
-}
+},
 {
   routeId: 106931832,
   date: '2019-03-24',
@@ -270,7 +270,7 @@ export default {
   userRating: '',
   name: 'Lambda.1',
   rating: 'V0'
-}
+},
 {
   routeId: 113970820,
   date: '2019-03-23',
@@ -283,7 +283,7 @@ export default {
   userRating: '',
   name: 'Explain Yourself',
   rating: '5.10a'
-}
+},
 {
   routeId: 113892902,
   date: '2019-03-23',
@@ -296,7 +296,7 @@ export default {
   userRating: '',
   name: 'Raggedy Andy',
   rating: '5.9'
-}
+},
 {
   routeId: 112511931,
   date: '2019-03-23',
@@ -309,7 +309,7 @@ export default {
   userRating: '',
   name: 'Team Umizoomi',
   rating: '5.10b'
-}
+},
 {
   routeId: 105749461,
   date: '2019-03-23',
@@ -322,7 +322,7 @@ export default {
   userRating: '',
   name: 'First Impressions',
   rating: '5.9+'
-}
+},
 {
   routeId: 105759129,
   date: '2019-02-02',
@@ -335,7 +335,7 @@ export default {
   userRating: '',
   name: 'White Punks on Pockets',
   rating: '5.9'
-}
+},
 {
   routeId: 105752839,
   date: '2019-02-02',
@@ -348,7 +348,7 @@ export default {
   userRating: '',
   name: 'Dihedrus',
   rating: '5.10b'
-}
+},
 {
   routeId: 105753880,
   date: '2019-02-02',
@@ -361,7 +361,7 @@ export default {
   userRating: '',
   name: 'Fantasia',
   rating: '5.11c'
-}
+},
 {
   routeId: 105892056,
   date: '2019-01-27',
@@ -374,7 +374,7 @@ export default {
   userRating: '',
   name: 'The Gambler',
   rating: '5.11-'
-}
+},
 {
   routeId: 105788000,
   date: '2019-01-27',
@@ -387,7 +387,7 @@ export default {
   userRating: '',
   name: 'Glitter Gulch',
   rating: '5.11a'
-}
+},
 {
   routeId: 105923032,
   date: '2019-01-27',
@@ -400,7 +400,7 @@ export default {
   userRating: '',
   name: 'Gridlock',
   rating: '5.11a'
-}
+},
 {
   routeId: 105732563,
   date: '2019-01-24',
@@ -413,7 +413,7 @@ export default {
   userRating: '',
   name: 'Pump First, Pay Later',
   rating: '5.10b'
-}
+},
 {
   routeId: 105732560,
   date: '2019-01-24',
@@ -426,7 +426,7 @@ export default {
   userRating: '',
   name: 'Gelatin Pooch',
   rating: '5.10a'
-}
+},
 {
   routeId: 106601301,
   date: '2019-01-26',
@@ -439,7 +439,7 @@ export default {
   userRating: '',
   name: 'Claimjumpers Special',
   rating: '5.10c'
-}
+},
 {
   routeId: 107424504,
   date: '2019-01-26',
@@ -452,7 +452,7 @@ export default {
   userRating: '',
   name: 'Edward Silverhands',
   rating: '5.10a'
-}
+},
 {
   routeId: 105910331,
   date: '2019-01-25',
@@ -465,7 +465,7 @@ export default {
   userRating: '',
   name: 'First Born',
   rating: '5.10b'
-}
+},
 {
   routeId: 105885132,
   date: '2019-01-25',
@@ -478,7 +478,7 @@ export default {
   userRating: '',
   name: 'Shut Up and Climb',
   rating: '5.11b'
-}
+},
 {
   routeId: 111020664,
   date: '2019-01-25',
@@ -491,7 +491,7 @@ export default {
   userRating: '',
   name: 'The Last In Line',
   rating: '5.10b'
-}
+},
 {
   routeId: 107367973,
   date: '2019-01-25',
@@ -504,7 +504,7 @@ export default {
   userRating: '',
   name: 'Fall of Vegas',
   rating: '5.10a'
-}
+},
 {
   routeId: 105975221,
   date: '2019-01-25',
@@ -517,7 +517,7 @@ export default {
   userRating: '',
   name: 'Skid Mark',
   rating: '5.9+'
-}
+},
 {
   routeId: 105732566,
   date: '2019-01-24',
@@ -530,7 +530,7 @@ export default {
   userRating: '',
   name: 'Running Amuck',
   rating: '5.10c'
-}
+},
 {
   routeId: 105748403,
   date: '2018-11-09',
@@ -543,7 +543,7 @@ export default {
   userRating: '',
   name: 'Vixen',
   rating: '5.10c'
-}
+},
 {
   routeId: 111769220,
   date: '2018-10-20',
@@ -556,7 +556,7 @@ export default {
   userRating: '',
   name: 'Deeper is Better',
   rating: '5.10b'
-}
+},
 {
   routeId: 106081922,
   date: '2018-10-20',
@@ -569,7 +569,7 @@ export default {
   userRating: '',
   name: 'Breakfast Burrito',
   rating: '5.10c'
-}
+},
 {
   routeId: 106081931,
   date: '2018-10-20',
@@ -582,7 +582,7 @@ export default {
   userRating: '',
   name: 'Fire and Brimstone',
   rating: '5.10d'
-}
+},
 {
   routeId: 106586504,
   date: '2018-10-17',
@@ -595,7 +595,7 @@ export default {
   userRating: '',
   name: 'Air Ride Equipped',
   rating: '5.11a'
-}
+},
 {
   routeId: 106333612,
   date: '2018-10-18',
@@ -608,7 +608,7 @@ export default {
   userRating: '',
   name: 'Banshee',
   rating: '5.11c'
-}
+},
 {
   routeId: 106064500,
   date: '2018-10-17',
@@ -621,7 +621,7 @@ export default {
   userRating: '',
   name: 'Hey There Fancy Pants',
   rating: '5.10c'
-}
+},
 {
   routeId: 106085043,
   date: '2017-03-12',
@@ -634,7 +634,7 @@ export default {
   userRating: '',
   name: 'Send Me on My Way',
   rating: '5.9-'
-}
+},
 {
   routeId: 106061906,
   date: '2017-03-12',
@@ -647,7 +647,7 @@ export default {
   userRating: '',
   name: 'Rat Stew',
   rating: '5.10a'
-}
+},
 {
   routeId: 106061920,
   date: '2018-10-16',
@@ -660,7 +660,7 @@ export default {
   userRating: '5.10b/c',
   name: 'Critters on the Cliff',
   rating: '5.10c'
-}
+},
 {
   routeId: 109480361,
   date: '2018-10-15',
@@ -673,7 +673,7 @@ export default {
   userRating: '',
   name: 'Grandpa Joe',
   rating: '5.9'
-}
+},
 {
   routeId: 107892930,
   date: '2018-10-15',
@@ -686,7 +686,7 @@ export default {
   userRating: '',
   name: 'Robotic Thumb',
   rating: '5.10b'
-}
+},
 {
   routeId: 106927822,
   date: '2018-10-15',
@@ -699,7 +699,7 @@ export default {
   userRating: '',
   name: 'The Glass Elevator',
   rating: '5.10d'
-}
+},
 {
   routeId: 106782060,
   date: '2018-10-15',
@@ -712,7 +712,7 @@ export default {
   userRating: '',
   name: 'Oompa',
   rating: '5.10b'
-}
+},
 {
   routeId: 110293313,
   date: '2018-10-13',
@@ -725,7 +725,7 @@ export default {
   userRating: '',
   name: 'No Brain, No Pain',
   rating: '5.10b'
-}
+},
 {
   routeId: 106577204,
   date: '2018-10-13',
@@ -738,7 +738,7 @@ export default {
   userRating: '',
   name: 'Random Precision',
   rating: '5.11b'
-}
+},
 {
   routeId: 106125118,
   date: '2018-10-13',
@@ -751,7 +751,7 @@ export default {
   userRating: '',
   name: 'Happy Trails',
   rating: '5.10d'
-}
+},
 {
   routeId: 106125110,
   date: '2018-10-13',
@@ -764,7 +764,7 @@ export default {
   userRating: '',
   name: 'The King Lives On',
   rating: '5.10b'
-}
+},
 {
   routeId: 106154626,
   date: '2018-10-13',
@@ -777,7 +777,7 @@ export default {
   userRating: '',
   name: 'Johnny B. Good',
   rating: '5.11a'
-}
+},
 {
   routeId: 106125070,
   date: '2017-03-15',
@@ -790,7 +790,7 @@ export default {
   userRating: '',
   name: 'A Brief History of Climb',
   rating: '5.10b'
-}
+},
 {
   routeId: 106885744,
   date: '2018-10-12',
@@ -803,7 +803,7 @@ export default {
   userRating: '',
   name: 'Significant Other',
   rating: '5.10b'
-}
+},
 {
   routeId: 106885753,
   date: '2018-10-12',
@@ -816,7 +816,7 @@ export default {
   userRating: '',
   name: 'Bulldozer',
   rating: '5.10a'
-}
+},
 {
   routeId: 106885779,
   date: '2018-10-12',
@@ -829,7 +829,7 @@ export default {
   userRating: '',
   name: 'K.S.B.',
   rating: '5.10d'
-}
+},
 {
   routeId: 108172884,
   date: '2018-10-06',
@@ -842,7 +842,7 @@ export default {
   userRating: '',
   name: 'Beetle Byway',
   rating: '5.8'
-}
+},
 {
   routeId: 109023567,
   date: '2018-09-29',
@@ -855,7 +855,7 @@ export default {
   userRating: '',
   name: 'King Lichen Me',
   rating: '5.10a'
-}
+},
 {
   routeId: 105963848,
   date: '2018-09-28',
@@ -868,7 +868,7 @@ export default {
   userRating: '',
   name: 'Rico Suave',
   rating: '5.10a'
-}
+},
 {
   routeId: 105918469,
   date: '2018-04-21',
@@ -881,7 +881,7 @@ export default {
   userRating: '',
   name: 'Satisfaction Guaranteed',
   rating: '5.11-'
-}
+},
 {
   routeId: 105918472,
   date: '2018-04-21',
@@ -894,7 +894,7 @@ export default {
   userRating: '',
   name: 'Orange Oswald',
   rating: '5.10a'
-}
+},
 {
   routeId: 106886454,
   date: '2018-04-20',
@@ -907,7 +907,7 @@ export default {
   userRating: '',
   name: 'Cottonmouth',
   rating: '5.10a'
-}
+},
 {
   routeId: 106852068,
   date: '2018-04-15',
@@ -920,7 +920,7 @@ export default {
   userRating: '',
   name: 'Scaphoid',
   rating: '5.9'
-}
+},
 {
   routeId: 109063118,
   date: '2018-04-15',
@@ -933,7 +933,7 @@ export default {
   userRating: '',
   name: 'Free Range Show Poodle',
   rating: '5.8'
-}
+},
 {
   routeId: 105966939,
   date: '2018-04-14',
@@ -946,7 +946,7 @@ export default {
   userRating: '',
   name: 'First Steps',
   rating: '5.10c'
-}
+},
 {
   routeId: 105944381,
   date: '2018-04-14',
@@ -959,7 +959,7 @@ export default {
   userRating: '',
   name: 'The Green Piece',
   rating: '5.10b'
-}
+},
 {
   routeId: 105966917,
   date: '2018-04-14',
@@ -972,7 +972,7 @@ export default {
   userRating: '',
   name: 'Low Voltage',
   rating: '5.10b'
-}
+},
 {
   routeId: 105966922,
   date: '2018-04-14',
@@ -985,7 +985,7 @@ export default {
   userRating: '',
   name: 'Springer',
   rating: '5.10b'
-}
+},
 {
   routeId: 105944377,
   date: '2018-04-14',
@@ -998,7 +998,7 @@ export default {
   userRating: '',
   name: 'Flight of the Gumby',
   rating: '5.9+'
-}
+},
 {
   routeId: 105993751,
   date: '2018-04-13',
@@ -1011,7 +1011,7 @@ export default {
   userRating: '',
   name: 'Menace Alert',
   rating: '5.9+'
-}
+},
 {
   routeId: 105993756,
   date: '2018-04-13',
@@ -1024,7 +1024,7 @@ export default {
   userRating: '',
   name: 'Chewy',
   rating: '5.10b'
-}
+},
 {
   routeId: 111412963,
   date: '2017-10-21',
@@ -1037,7 +1037,7 @@ export default {
   userRating: '',
   name: 'Bridge Burner',
   rating: '5.10a'
-}
+},
 {
   routeId: 112835534,
   date: '2017-10-15',
@@ -1050,7 +1050,7 @@ export default {
   userRating: '',
   name: 'Little Purple Flowers',
   rating: '5.9'
-}
+},
 {
   routeId: 112835323,
   date: '2017-10-15',
@@ -1063,7 +1063,7 @@ export default {
   userRating: '',
   name: 'Thieves in the Temple',
   rating: '5.8'
-}
+},
 {
   routeId: 106138609,
   date: '2017-10-15',
@@ -1076,7 +1076,7 @@ export default {
   userRating: '',
   name: "Mrs. Field's Follies",
   rating: '5.8'
-}
+},
 {
   routeId: 106138634,
   date: '2017-10-15',
@@ -1089,7 +1089,7 @@ export default {
   userRating: '',
   name: 'Zeitgeist',
   rating: '5.10a'
-}
+},
 {
   routeId: 106138628,
   date: '2017-10-15',
@@ -1102,7 +1102,7 @@ export default {
   userRating: '',
   name: 'Crescendo',
   rating: '5.9+'
-}
+},
 {
   routeId: 105987545,
   date: '2017-10-15',
@@ -1115,7 +1115,7 @@ export default {
   userRating: '',
   name: 'Kinesthetica',
   rating: '5.10c'
-}
+},
 {
   routeId: 106418047,
   date: '2017-10-15',
@@ -1128,7 +1128,7 @@ export default {
   userRating: '',
   name: 'Badass Tattoo',
   rating: '5.10b'
-}
+},
 {
   routeId: 111054408,
   date: '2017-10-13',
@@ -1141,7 +1141,7 @@ export default {
   userRating: '',
   name: 'Destroying Angel',
   rating: '5.10a/b'
-}
+},
 {
   routeId: 109308672,
   date: '2017-10-13',
@@ -1154,7 +1154,7 @@ export default {
   userRating: '',
   name: 'Nasty Wieners',
   rating: '5.9+'
-}
+},
 {
   routeId: 106188769,
   date: '2017-09-24',
@@ -1167,7 +1167,7 @@ export default {
   userRating: '5.9+',
   name: 'Blood, Sweat and Chalk',
   rating: '5.9+'
-}
+},
 {
   routeId: 107560400,
   date: '2017-09-24',
@@ -1180,7 +1180,7 @@ export default {
   userRating: '',
   name: 'Shipwrecked',
   rating: '5.9'
-}
+},
 {
   routeId: 107208763,
   date: '2017-09-24',
@@ -1193,7 +1193,7 @@ export default {
   userRating: '',
   name: 'Castaways',
   rating: '5.8'
-}
+},
 {
   routeId: 106614620,
   date: '2017-09-11',
@@ -1206,7 +1206,7 @@ export default {
   userRating: '',
   name: 'Bethel',
   rating: '5.10a'
-}
+},
 {
   routeId: 106614611,
   date: '2017-09-11',
@@ -1219,7 +1219,7 @@ export default {
   userRating: '',
   name: '59" DrillBitch',
   rating: '5.10a'
-}
+},
 {
   routeId: 106921324,
   date: '2017-09-11',
@@ -1232,7 +1232,7 @@ export default {
   userRating: '',
   name: 'Mancala',
   rating: '5.10a'
-}
+},
 {
   routeId: 106170048,
   date: '2017-09-11',
@@ -1245,7 +1245,7 @@ export default {
   userRating: '5.10c',
   name: 'Fifth Bolt Faith',
   rating: '5.10c'
-}
+},
 {
   routeId: 106065471,
   date: '2017-09-11',
@@ -1258,7 +1258,7 @@ export default {
   userRating: '5.9+',
   name: 'Plate Tectonics',
   rating: '5.10a'
-}
+},
 {
   routeId: 106065461,
   date: '2017-09-11',
@@ -1271,7 +1271,7 @@ export default {
   userRating: '',
   name: "Gettin' Lucky in Kentucky",
   rating: '5.10b'
-}
+},
 {
   routeId: 106189887,
   date: '2017-09-11',
@@ -1284,7 +1284,7 @@ export default {
   userRating: '',
   name: 'Tall Cool One',
   rating: '5.9'
-}
+},
 {
   routeId: 106885726,
   date: '2017-09-10',
@@ -1297,7 +1297,7 @@ export default {
   userRating: '',
   name: 'Miranda Rayne',
   rating: '5.9'
-}
+},
 {
   routeId: 107685747,
   date: '2017-09-10',
@@ -1310,7 +1310,7 @@ export default {
   userRating: '5.10a',
   name: 'Monobrow',
   rating: '5.10a'
-}
+},
 {
   routeId: 107684861,
   date: '2017-09-10',
@@ -1323,7 +1323,7 @@ export default {
   userRating: '',
   name: 'Rorshach Inkblot Test',
   rating: '5.8+'
-}
+},
 {
   routeId: 106061901,
   date: '2017-09-09',
@@ -1336,7 +1336,7 @@ export default {
   userRating: '5.10d',
   name: 'Return of Manimal',
   rating: '5.10d'
-}
+},
 {
   routeId: 107321623,
   date: '2017-09-09',
@@ -1349,7 +1349,7 @@ export default {
   userRating: '',
   name: 'Watering Hole',
   rating: '5.10a'
-}
+},
 {
   routeId: 106968604,
   date: '2017-09-09',
@@ -1362,7 +1362,7 @@ export default {
   userRating: '',
   name: 'Ryanosaurus',
   rating: '5.9'
-}
+},
 {
   routeId: 106968591,
   date: '2017-09-09',
@@ -1375,7 +1375,7 @@ export default {
   userRating: '',
   name: 'Prehistoric Extermination',
   rating: '5.8'
-}
+},
 {
   routeId: 106130303,
   date: '2017-09-09',
@@ -1388,7 +1388,7 @@ export default {
   userRating: '',
   name: "Workin' For The Weekend",
   rating: '5.10c'
-}
+},
 {
   routeId: 106152665,
   date: '2017-08-06',
@@ -1401,7 +1401,7 @@ export default {
   userRating: '',
   name: 'I Love Big Jugs',
   rating: '5.8'
-}
+},
 {
   routeId: 106000377,
   date: '2017-07-25',
@@ -1414,7 +1414,7 @@ export default {
   userRating: '5.6',
   name: 'Thais',
   rating: '5.6'
-}
+},
 {
   routeId: 106026660,
   date: '2017-03-16',
@@ -1427,7 +1427,7 @@ export default {
   userRating: '',
   name: 'Valor Over Discretion',
   rating: '5.8'
-}
+},
 {
   routeId: 106125099,
   date: '2017-03-15',
@@ -1440,7 +1440,7 @@ export default {
   userRating: '',
   name: '27 Years of Climbing',
   rating: '5.8'
-}
+},
 {
   routeId: 107537571,
   date: '2017-03-12',
@@ -1453,7 +1453,7 @@ export default {
   userRating: '',
   name: 'Trundling Kentucky',
   rating: '5.8'
-}
+},
 {
   routeId: 106286280,
   date: '2017-03-12',
@@ -1466,7 +1466,7 @@ export default {
   userRating: '',
   name: 'Sweet Jane',
   rating: '5.8-'
-}
+},
 {
   routeId: 106085047,
   date: '2017-03-12',
@@ -1479,7 +1479,7 @@ export default {
   userRating: '',
   name: 'The Offering',
   rating: '5.7'
-}
+},
 {
   routeId: 108524421,
   date: '2017-03-12',
@@ -1492,7 +1492,7 @@ export default {
   userRating: '',
   name: 'Ohio Climbing',
   rating: '5.8'
-}
+},
 {
   routeId: 105892929,
   date: '2017-03-11',
@@ -1505,7 +1505,7 @@ export default {
   userRating: '',
   name: 'Ledger Line',
   rating: '5.7'
-}
+},
 {
   routeId: 105882846,
   date: '2017-03-11',
@@ -1518,7 +1518,7 @@ export default {
   userRating: '',
   name: 'C Sharp or B Flat',
   rating: '5.7'
-}
+},
 {
   routeId: 105878619,
   date: '2016-10-10',
@@ -1531,7 +1531,7 @@ export default {
   userRating: '5.9-',
   name: 'War and  Peace',
   rating: '5.9+'
-}
+},
 {
   routeId: 105923846,
   date: '2016-10-10',
@@ -1544,7 +1544,7 @@ export default {
   userRating: '',
   name: 'Snake Skin Slab',
   rating: '5.8'
-}
+},
 {
   routeId: 105878204,
   date: '2016-10-10',
@@ -1557,7 +1557,7 @@ export default {
   userRating: '',
   name: 'Masterpiece',
   rating: '5.10a'
-}
+},
 {
   routeId: 105962922,
   date: '2016-10-09',
@@ -1570,7 +1570,7 @@ export default {
   userRating: '',
   name: 'Rise and Shine',
   rating: '5.7'
-}
+},
 {
   routeId: 105966659,
   date: '2016-10-09',
@@ -1583,7 +1583,7 @@ export default {
   userRating: '',
   name: 'Easily Amused',
   rating: '5.7'
-}
+},
 {
   routeId: 106071435,
   date: '2016-10-09',
@@ -1596,7 +1596,7 @@ export default {
   userRating: '',
   name: 'Squeeze My Lemon',
   rating: '5.8'
-}
+},
 {
   routeId: 106058997,
   date: '2016-10-08',
@@ -1609,7 +1609,7 @@ export default {
   userRating: '',
   name: 'Fat Man',
   rating: '5.7'
-}
+},
 {
   routeId: 107543321,
   date: '2016-10-08',
@@ -1622,7 +1622,7 @@ export default {
   userRating: '',
   name: 'The Maltese Falcon',
   rating: '5.8'
-}
+},
 {
   routeId: 106148885,
   date: '2016-10-08',
@@ -1635,7 +1635,7 @@ export default {
   userRating: '',
   name: 'Toxic Gumbo',
   rating: '5.8'
-}
+},
 {
   routeId: 105840572,
   date: '2016-09-03',
@@ -1648,7 +1648,7 @@ export default {
   userRating: '',
   name: 'Apoplexy',
   rating: '5.9'
-}
+},
 {
   routeId: 105821512,
   date: '2016-09-03',
@@ -1661,7 +1661,7 @@ export default {
   userRating: '',
   name: 'Son of Easy O',
   rating: '5.8'
-}
+},
 {
   routeId: 105799779,
   date: '2016-09-03',
@@ -1674,7 +1674,7 @@ export default {
   userRating: '',
   name: "Ken's Crack",
   rating: '5.7+'
-}
+},
 {
   routeId: 105799721,
   date: '2016-09-03',
@@ -1687,7 +1687,7 @@ export default {
   userRating: '',
   name: 'Horseman',
   rating: '5.5'
-}
+},
 {
   routeId: 106092676,
   date: '2016-06-19',
@@ -1700,7 +1700,7 @@ export default {
   userRating: '',
   name: "Artist's Arete (mid-cliff Start)",
   rating: '5.6'
-}
+},
 {
   routeId: 106092119,
   date: '2016-06-19',
@@ -1713,4 +1713,4 @@ export default {
   userRating: '',
   name: 'Brass Balls',
   rating: '5.8'
-}
+}];
