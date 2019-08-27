@@ -1,6 +1,6 @@
 import startPos0 from "./cachedJSONs/startPos0.js";
 import startPos200 from "./cachedJSONs/startPos200.js";
-import oneTick from './cachedJSONs/oneTick.js/index.js';
+import oneTick from './cachedJSONs/oneTick.js';
 import cachedAllSends from './cachedJSONs/sends.js'
 import utilities from "./utilities.js";
 const { fetchAndJsonify } = utilities;
@@ -50,6 +50,7 @@ async function getAllSendData(sends, sendMap) {
       let temp = Object.assign({}, sendMap.get(route.id));
       temp.name = route.name;
       temp.rating = route.rating;
+      temp.stars = route.stars;
       sendMap.set(temp.routeId, temp);
     }
 
@@ -109,7 +110,7 @@ async function newtworkInit() {
     sendMap.set(send.routeId, send);
   }
   const finalMap = await getAllSendData(allSends, sendMap);
-  // console.warn(finalMap.forEach((value, key) => console.warn(value)));
+  console.warn(finalMap.forEach((value, key) => console.warn(value)));
   return finalMap;
 
 }
@@ -118,12 +119,16 @@ async function init() {
   const finalMap = await localInit();
   // const finalMap = await newtworkInit();
   const gradeMap = new Map();
-
+  let stars = 0;
+  
   finalMap.forEach((send) => {
     let currCount = gradeMap.get(send.rating);
     let count = (currCount) ? currCount+1 : 1;
+    stars += parseFloat(send.stars);
     gradeMap.set(send.rating, count);
   });
+  console.warn('Sends at each grade:');
   console.warn(gradeMap.forEach((value, key) => console.warn(`${key}: ${value}`)));
+  console.warn(`\nTotal stars: ${stars.toFixed(2)}`);
 }
 init();
