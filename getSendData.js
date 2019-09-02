@@ -110,14 +110,14 @@ async function newtworkInit() {
     sendMap.set(send.routeId, send);
   }
   const finalMap = await getAllSendData(allSends, sendMap);
-  console.warn(finalMap.forEach((value, key) => console.warn(value)));
+  // console.warn(finalMap.forEach((value, key) => console.warn(value)));
   return finalMap;
 
 }
 
 async function init() {
-  const finalMap = await localInit();
-  // const finalMap = await newtworkInit();
+  // const finalMap = await localInit();
+  const finalMap = await newtworkInit();
   const gradeMap = new Map();
   let stars = 0;
   
@@ -128,7 +128,10 @@ async function init() {
     gradeMap.set(send.rating, count);
   });
   console.warn('Sends at each grade:');
-  console.warn(gradeMap.forEach((value, key) => console.warn(`${key}: ${value}`)));
-  console.warn(`\nTotal stars: ${stars.toFixed(2)}`);
+  const keys = Array.from(gradeMap.keys()).sort();
+  for (const key of keys) {
+    console.warn(`${key}: ${gradeMap.get(key)}`);
+  }
+  console.warn(`\nTotal stars sent: ${stars.toFixed(2)}`);
 }
 init();
