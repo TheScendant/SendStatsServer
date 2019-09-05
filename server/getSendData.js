@@ -2,7 +2,7 @@ import startPos0 from "./cachedJSONs/startPos0.js";
 import startPos200 from "./cachedJSONs/startPos200.js";
 import oneTick from './cachedJSONs/oneTick.js';
 import cachedAllSends from './cachedJSONs/sends.js'
-import utilities from "./utilities.js";
+import utilities from './utilities.js';
 const { fetchAndJsonify } = utilities;
 import url from './urls.js';
 const { TheScendantURL, routeURL } = url;
@@ -115,18 +115,31 @@ async function newtworkInit() {
 
 }
 
-async function init() {
-  // const finalMap = await localInit();
-  const finalMap = await newtworkInit();
+function getGradeMap(finalMap) {
   const gradeMap = new Map();
-  let stars = 0;
-  
   finalMap.forEach((send) => {
     let currCount = gradeMap.get(send.rating);
     let count = (currCount) ? currCount+1 : 1;
-    stars += parseFloat(send.stars);
     gradeMap.set(send.rating, count);
   });
+  return gradeMap;
+}
+
+function getStarCount(finalMap) {
+  let stars = 0;
+  // should I use reduce here?
+  finalMap.forEach((send) => {
+    stars += parseFloat(send.stars);
+  });
+  return stars;
+}
+
+async function init() {
+  // const finalMap = await localInit();
+  const finalMap = await newtworkInit();
+  const gradeMap = getGradeMap(finalMap);
+  const stars = getStarCount(finalMap);
+
   console.warn('Sends at each grade:');
   const keys = Array.from(gradeMap.keys()).sort();
   for (const key of keys) {
@@ -134,4 +147,10 @@ async function init() {
   }
   console.warn(`\nTotal stars sent: ${stars.toFixed(2)}`);
 }
-init();
+
+export default {
+  getGradeMap,
+  getStarCount,
+  localInit,
+  newtworkInit,
+};
