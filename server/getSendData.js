@@ -5,7 +5,7 @@ import cachedAllSends from './cachedJSONs/sends.js'
 import utilities from './utilities.js';
 const { fetchAndJsonify } = utilities;
 import url from './urls.js';
-const { TheScendantURL, routeURL } = url;
+const { getTicks, getRoutes } = url;
 
 /**
  * Filters all routes down to routes sent
@@ -41,7 +41,7 @@ async function getAllSendData(sends, sendMap) {
   while (!done) {
     const currRoutes = routeIds.slice(x, x + 100);
     let currRoutesString = currRoutes.join(",");
-    let currURL = `${routeURL}&routeIds=${currRoutesString}`
+    let currURL = `${getRoutes}&routeIds=${currRoutesString}`
     const currRouteData = await fetchAndJsonify(currURL);
     const { routes } = currRouteData;
 
@@ -68,12 +68,12 @@ async function getAllSendData(sends, sendMap) {
  * Returns all routes sent for a user
  * @return {Array<Route>}
  */
-async function getAllSends() {
+async function getAllSends(email) {
   let allTicksFound = false;
   let startPos = 0;
   const allSends = [];
   while (!allTicksFound) {
-    let tempURL = `${TheScendantURL}&startPos=${startPos}`;
+    let tempURL = `${getTicks}&email=${email}&startPos=${startPos}`;
     const jsonBlob = await fetchAndJsonify(tempURL);
     const sends = await didYouSendThough(jsonBlob);
     allSends.push(...sends);
@@ -85,8 +85,7 @@ async function getAllSends() {
   return allSends;
 }
 
-async function localInit() {
-
+async function localInit(email) {
   const allSends = [];
   //allSends.push(...startPos0.ticks);
   //allSends.push(...startPos200.ticks);
@@ -102,8 +101,9 @@ async function localInit() {
   return finalMap;
 }
 
-async function newtworkInit() {
-  const allSends = await getAllSends();
+async function newtworkInit(email) {
+
+  const allSends = await getAllSends(email);
   // console.warn(allSends);
   const sendMap = new Map();
   for (const send of allSends) {
@@ -135,8 +135,8 @@ function getStarCount(finalMap) {
 }
 
 async function init() {
-  // const finalMap = await localInit();
-  const finalMap = await newtworkInit();
+  // const finalMap = await localInit('hayden518@gmail.com');
+  const finalMap = await newtworkInit('hayden518@gmail.com');
   const gradeMap = getGradeMap(finalMap);
   const stars = getStarCount(finalMap);
 
