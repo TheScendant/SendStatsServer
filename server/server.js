@@ -25,7 +25,7 @@ app.post('/email', async (req, res) => {
     const { email } = req.body;
     const sendMap = await newtworkInit(email);
     const stars = getStarCount(sendMap);
-    message = `Hey ${req.body} you have sent ${stars} stars.`;
+    message = `Hey ${email} you have sent ${stars.toFixed(2)} stars.`;
   } else {
     message = "No email found";
   }
