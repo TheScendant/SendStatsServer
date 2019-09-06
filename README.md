@@ -5,7 +5,9 @@ Uses the mountainproject data api to get send details.
 To setup:
 ```
 npm install
-node --experimental-modules getSendData.js
+npm run start:server
+
+<Open browser to http://localhost:5000>
 ```
 
 Requirements:
