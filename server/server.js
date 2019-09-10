@@ -1,7 +1,7 @@
 import express from 'express';
 import 'babel-polyfill';
 import getSendData from './getSendData.js';
-const { getStarCount, localInit, newtworkInit } = getSendData;
+const { getStarCount, localInit, networkInit } = getSendData;
 const app = express();
 app.use(express.json())
 app.get('/api', (req, res) => {
@@ -23,10 +23,13 @@ app.post('/email', async (req, res) => {
   let message;
   if (req.body && req.body.email) {
     const { email } = req.body;
-    const sendMap = await newtworkInit(email);
-    const stars = getStarCount(sendMap);
-    const sends = sendMap.size;
-    message = `Hey ${email} you have sent ${sends} routes and ${stars.toFixed(2)} stars.`;
+    const sendMap = await networkInit(email);
+    // const stars = getStarCount(sendMap);
+    const sends = [];
+    for (const key of sendMap.keys()) {
+      sends.push(sendMap.get(key));
+    }
+    message = sends;
   } else {
     message = "No email found";
   }

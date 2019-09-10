@@ -101,7 +101,7 @@ async function localInit(email) {
   return finalMap;
 }
 
-async function newtworkInit(email) {
+async function networkInit(email) {
 
   const allSends = await getAllSends(email);
   // console.warn(allSends);
@@ -136,7 +136,7 @@ function getStarCount(finalMap) {
 
 async function init() {
   // const finalMap = await localInit('hayden518@gmail.com');
-  const finalMap = await newtworkInit('hayden518@gmail.com');
+  const finalMap = await networkInit('hayden518@gmail.com');
   const gradeMap = getGradeMap(finalMap);
   const stars = getStarCount(finalMap);
 
@@ -152,5 +152,5 @@ export default {
   getGradeMap,
   getStarCount,
   localInit,
-  newtworkInit,
+  networkInit,
 };
