@@ -11,4 +11,12 @@ async function fetchAndJsonify(url) {
   });
 }
 
-export default {fetchAndJsonify};
+const DATA_TYPE_ENUM = {
+  EMAIL: 'EMAIL',
+  USER_ID: 'USER_ID',
+}
+
+export default {
+  DATA_TYPE_ENUM,
+  fetchAndJsonify
+};

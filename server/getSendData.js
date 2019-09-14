@@ -3,7 +3,7 @@ import startPos200 from "./cachedJSONs/startPos200.js";
 import oneTick from './cachedJSONs/oneTick.js';
 import cachedAllSends from './cachedJSONs/sends.js'
 import utilities from './utilities.js';
-const { fetchAndJsonify } = utilities;
+const { DATA_TYPE_ENUM, fetchAndJsonify } = utilities;
 import url from './urls.js';
 const { getTicks, getRoutes } = url;
 
@@ -68,13 +68,13 @@ async function getAllSendData(sends, sendMap) {
  * Returns all routes sent for a user
  * @return {Array<Route>}
  */
-async function getAllSends(email) {
+async function getAllSends(url) {
   let allTicksFound = false;
-  let startPos = 0;
   const allSends = [];
+  let startPos = 0;
   while (!allTicksFound) {
-    let tempURL = `${getTicks}&email=${email}&startPos=${startPos}`;
-    const jsonBlob = await fetchAndJsonify(tempURL);
+    const tempUrl = `${url}&startPos=${startPos}`
+    const jsonBlob = await fetchAndJsonify(tempUrl);
     const sends = await didYouSendThough(jsonBlob);
     allSends.push(...sends);
     startPos += 200;
@@ -101,25 +101,33 @@ async function localInit(email) {
   return finalMap;
 }
 
-async function networkInit(email) {
-
-  const allSends = await getAllSends(email);
-  // console.warn(allSends);
-  const sendMap = new Map();
-  for (const send of allSends) {
-    sendMap.set(send.routeId, send);
+async function networkInit(data, DATA_TYPE) {
+  try {
+    let tempURL;
+    if (DATA_TYPE === DATA_TYPE_ENUM.EMAIL) {
+      tempURL = `${getTicks}&email=${data}`;
+    } else if (DATA_TYPE === DATA_TYPE_ENUM.USER_ID) {
+      tempURL = `${getTicks}&userId=${data}`;
+    }
+    const allSends = await getAllSends(tempURL);
+    const sendMap = new Map();
+    for (const send of allSends) {
+      sendMap.set(send.routeId, send);
+    }
+    const finalMap = await getAllSendData(allSends, sendMap);
+    // console.warn(finalMap.forEach((value, key) => console.warn(value)));
+    return finalMap;
   }
-  const finalMap = await getAllSendData(allSends, sendMap);
-  // console.warn(finalMap.forEach((value, key) => console.warn(value)));
-  return finalMap;
-
+  catch (e) {
+    console.warn(e);
+  }
 }
 
 function getGradeMap(finalMap) {
   const gradeMap = new Map();
   finalMap.forEach((send) => {
     let currCount = gradeMap.get(send.rating);
-    let count = (currCount) ? currCount+1 : 1;
+    let count = (currCount) ? currCount + 1 : 1;
     gradeMap.set(send.rating, count);
   });
   return gradeMap;
