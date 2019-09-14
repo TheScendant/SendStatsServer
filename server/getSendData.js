@@ -119,7 +119,7 @@ async function networkInit(data, DATA_TYPE) {
     return finalMap;
   }
   catch (e) {
-    console.warn(e);
+    console.error(e);
   }
 }
 
