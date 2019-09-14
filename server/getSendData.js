@@ -144,7 +144,7 @@ function getStarCount(finalMap) {
 
 async function init() {
   // const finalMap = await localInit('hayden518@gmail.com');
-  const finalMap = await networkInit('hayden518@gmail.com');
+  const finalMap = await networkInit('hayden518@gmail.com', DATA_TYPE_ENUM.EMAIL);
   const gradeMap = getGradeMap(finalMap);
   const stars = getStarCount(finalMap);
 

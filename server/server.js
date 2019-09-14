@@ -37,10 +37,12 @@ app.post('/userId', async (req, res) => {
       message = sends;
     } catch (e) {
       message = "Error fetching send stats";
+      res.status(500);
     }
 
   } else {
     message = "No userId found";
+    res.status(400);
   }
   res.send({
     message: JSON.stringify(message)
@@ -61,10 +63,12 @@ app.post('/email', async (req, res) => {
       message = sends;
     } catch (e) {
       message = "Error fetching send stats";
+      res.status(500);
     }
 
   } else {
-    message = "No email found";
+    message = "No email in request";
+    res.status(400);
   }
   res.send({
     message: JSON.stringify(message)

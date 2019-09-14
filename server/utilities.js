@@ -5,10 +5,14 @@ import fetch from "node-fetch";
  * @return {JSONObject}
  */
 async function fetchAndJsonify(url) {
-  return fetch(url).then(async (a) => {
-    const json = await a.json();
-    return json;
-  });
+  try {
+    return fetch(url).then(async (a) => {
+      const json = await a.json();
+      return json;
+    });
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 const DATA_TYPE_ENUM = {
