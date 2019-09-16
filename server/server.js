@@ -2,6 +2,7 @@ import express from 'express';
 import 'babel-polyfill';
 import { getStarCount, localInit, networkInit } from './getSendData.js';
 import { DATA_TYPE_ENUM } from './utilities.js';
+import {networkInit as getUserData} from './getUserData';
 
 
 const app = express();
@@ -21,6 +22,25 @@ app.get('/testTicks', async (req, res) => {
   })
 });
 
+
+
+app.post('/userData', async (req, res) => {
+  let message;
+  try {
+    const userData = await getUserData();
+    // add some checking here
+    message = userData;
+  } catch(e) {
+    res.status(500);
+    message = "Error fetching user data";
+  }
+  res.send({
+    message: JSON.stringify(message)
+  })
+})
+
+// dosomething, combine these into 1 ep that picks
+// data type enum based on req body contents
 app.post('/userId', async (req, res) => {
   let message;
   if (req.body && req.body.userId) {
