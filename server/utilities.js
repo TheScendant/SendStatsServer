@@ -20,7 +20,7 @@ const DATA_TYPE_ENUM = {
   USER_ID: 'USER_ID',
 }
 
-export default {
+export {
   DATA_TYPE_ENUM,
   fetchAndJsonify
 };

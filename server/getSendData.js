@@ -2,10 +2,8 @@ import startPos0 from "./cachedJSONs/startPos0.js";
 import startPos200 from "./cachedJSONs/startPos200.js";
 import oneTick from './cachedJSONs/oneTick.js';
 import cachedAllSends from './cachedJSONs/sends.js'
-import utilities from './utilities.js';
-const { DATA_TYPE_ENUM, fetchAndJsonify } = utilities;
-import url from './urls.js';
-const { getTicks, getRoutes } = url;
+import { DATA_TYPE_ENUM, fetchAndJsonify } from './utilities.js';
+import { getTicks, getRoutes } from './urls.js';
 
 /**
  * Filters all routes down to routes sent
@@ -156,7 +154,7 @@ async function init() {
   console.warn(`\nTotal stars sent: ${stars.toFixed(2)}`);
 }
 
-export default {
+export {
   getGradeMap,
   getStarCount,
   localInit,

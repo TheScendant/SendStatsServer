@@ -5,7 +5,7 @@ const getRoutes = `${mpURL}get-routes?key=${key}`;
 
 //const TheScendantURL = `https://www.mountainproject.com/data/get-ticks?userId=112023884&key=${key}`;
 
-export default {
+export {
   getTicks,
   getRoutes,
 }

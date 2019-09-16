@@ -1,9 +1,7 @@
 import express from 'express';
 import 'babel-polyfill';
-import getSendData from './getSendData.js';
-const { getStarCount, localInit, networkInit } = getSendData;
-import utilities from './utilities.js';
-const { DATA_TYPE_ENUM } = utilities;
+import { getStarCount, localInit, networkInit } from './getSendData.js';
+import { DATA_TYPE_ENUM } from './utilities.js';
 
 
 const app = express();
