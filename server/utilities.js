@@ -1,4 +1,8 @@
 import fetch from "node-fetch";
+const https = require("https");
+const agent = new https.Agent({
+  rejectUnauthorized: false
+})
 /**
  * Fetches a json of user sends
  * @param {String} url
@@ -6,7 +10,8 @@ import fetch from "node-fetch";
  */
 async function fetchAndJsonify(url) {
   try {
-    return fetch(url).then(async (a) => {
+    return fetch(url,  { agent }).then(async (a) => {
+    // return fetch(url).then(async (a) => {
       const json = await a.json();
       return json;
     });
