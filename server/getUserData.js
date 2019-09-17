@@ -1,4 +1,4 @@
-import {fetchAndJsonify} from 'utilities';
+import {fetchAndJsonify} from './utilities.js';
 import { getUser } from './urls.js';
 
 async function getAllUserData(url) {

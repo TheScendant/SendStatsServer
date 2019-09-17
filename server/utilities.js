@@ -15,6 +15,20 @@ async function fetchAndJsonify(url) {
   }
 }
 
+const getDataAndType = (body) => {
+  let data, dataType;
+  if (body.userId) {
+    data = body.userId;
+    dataType = DATA_TYPE_ENUM.USER_ID;
+  } else if (body.email) {
+    data = body.email;
+    dataType = DATA_TYPE_ENUM.EMAIL;
+  } else {
+    throw Error("No userId or email");
+  }
+  return [data, dataType];
+}
+
 const DATA_TYPE_ENUM = {
   EMAIL: 'EMAIL',
   USER_ID: 'USER_ID',
@@ -22,5 +36,6 @@ const DATA_TYPE_ENUM = {
 
 export {
   DATA_TYPE_ENUM,
-  fetchAndJsonify
+  fetchAndJsonify,
+  getDataAndType,
 };
