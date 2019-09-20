@@ -16,6 +16,7 @@
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "eslint": "^6.4.0",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
     "start-server-webpack-plugin": "^2.2.5",
