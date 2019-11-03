@@ -5,9 +5,9 @@ Uses the mountainproject data api to get send details.
 To setup:
 ```
 npm install
-npm run start:server
+npm start
 
-<Open browser to http://localhost:5000>
+This server runs on port 5000.
 ```
 
 Requirements:
