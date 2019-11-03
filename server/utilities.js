@@ -39,8 +39,32 @@ const DATA_TYPE_ENUM = {
   USER_ID: 'USER_ID',
 }
 
+const microWeights = new Map([["-", 1], ["a", 2], ["a/b", 3], ["b", 4], ["b/c", 5], ["c", 6], ["c/d", 7], ["d", 8], ["+", 9]]);
+const getMicroRating = (grade) => microWeights.get(grade.match(/5\.\d+(.*)/)[1]); // matches anything after 5.numbers
+const getMacroRating = (grade) => parseInt(grade.match(/5\.(\d+)/)[1]); // matches the number after '5'
+const gradeSorter = (a, b) => {
+    const macroA = getMacroRating(a);
+    const macroB = getMacroRating(b);
+    if (macroA > macroB) {
+        return 1;
+    }
+    if (macroA < macroB) {
+        return -1;
+    }
+    let microA = getMicroRating(a) || 5.5;
+    let microB = getMicroRating(b) || 5.5;
+    if (microA > microB) {
+        return 1;
+    }
+    if (microA < microB) {
+        return -1;
+    }
+    return 0;
+}
+
 export {
   DATA_TYPE_ENUM,
   fetchAndJsonify,
   getDataAndType,
+  gradeSorter,
 };

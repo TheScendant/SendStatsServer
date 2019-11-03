@@ -2,7 +2,7 @@ import startPos0 from "./cachedJSONs/startPos0.js";
 import startPos200 from "./cachedJSONs/startPos200.js";
 import oneTick from './cachedJSONs/oneTick.js';
 import cachedAllSends from './cachedJSONs/sends.js'
-import { DATA_TYPE_ENUM, fetchAndJsonify } from './utilities.js';
+import { DATA_TYPE_ENUM, fetchAndJsonify, gradeSorter } from './utilities.js';
 import { getTicks, getRoutes } from './urls.js';
 
 /**
@@ -15,9 +15,9 @@ async function didYouSendThough(json) {
   for (let x = 0; x < json.ticks.length; x++) {
     const tick = json.ticks[x];
     const { style, leadStyle } = tick;
-    const sendTypes = ['Flash', 'Onsight', 'Pinkpoint', 'Redpoint'];
+    const sendTypes = ['flash', 'onsight', 'pinkpoint', 'redpoint'];
     if (style === 'Lead') {
-      if (sendTypes.includes(leadStyle)) {
+      if (leadStyle && sendTypes.includes(leadStyle.toLowerCase())) {
         sends.push(tick);
       }
     } else if (style === 'Solo') {
@@ -57,7 +57,6 @@ async function getAllSendData(sends, sendMap) {
       done = true;
     }
     x += 100;
-
   }
   return sendMap;
 }
@@ -114,6 +113,27 @@ async function networkInit(data, DATA_TYPE) {
     }
     const finalMap = await getAllSendData(allSends, sendMap);
     // console.warn(finalMap.forEach((value, key) => console.warn(value)));
+
+    let hardestFlash = '5.0';
+    let hardestOnsight = '5.0';
+    for (const sendId of finalMap.keys()) {
+      const send = finalMap.get(sendId);
+      const {leadStyle, rating} = send;
+      if (leadStyle && leadStyle.toLowerCase() === 'flash') {
+        const harder = gradeSorter(rating, hardestFlash);
+        if (harder === 1) {
+          hardestFlash = rating;
+        }
+      } else if (leadStyle && leadStyle.toLowerCase() === 'onsight') {
+        const harder = gradeSorter(rating, hardestOnsight);
+        if (harder === 1) {
+          hardestOnsight = rating;
+        }
+      }
+    }
+    console.warn(`Hardest Flash: ${hardestFlash}`);
+    console.warn(`Hardest Onsight: ${hardestOnsight}`);
+
     return finalMap;
   }
   catch (e) {
