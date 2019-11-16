@@ -1,26 +1,12 @@
 import express from 'express';
 import 'babel-polyfill';
-import { getStarCount, localInit, networkInit } from './getSendData.js';
+import { allGradesInit, getStarCount, localInit, networkInit } from './getSendData.js';
 import { getDataAndType } from './utilities.js';
 import {networkInit as getUserData} from './getUserData';
 
 
 const app = express();
 app.use(express.json())
-
-app.get('/testTicks', async (req, res) => {
-  const sendMap = await localInit();
-  /* const stars = getStarCount(sendMap);
-  const message = `You have sent ${stars} stars!`; */
-  const sends = [];
-  for (const key of sendMap.keys()) {
-    sends.push(sendMap.get(key));
-  }
-  const message = sends;
-  res.send({
-    message: message
-  })
-});
 
 app.post('/userData', async (req, res) => {
   let message;
@@ -43,7 +29,9 @@ app.post('/sendData', async (req, res) => {
   if (req.body) {
     try {
       const [data, dataType] = getDataAndType(req.body);
-      const sendMap = await networkInit(data, dataType);
+      // const sendMap = await localInit(data, dataType);
+      // const sendMap = await networkInit(data, dataType);
+      const sendMap = await allGradesInit(data, dataType);
       const sends = [];
       for (const key of sendMap.keys()) {
         sends.push(sendMap.get(key));

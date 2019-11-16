@@ -1,7 +1,8 @@
 import startPos0 from "./cachedJSONs/startPos0.js";
 import startPos200 from "./cachedJSONs/startPos200.js";
 import oneTick from './cachedJSONs/oneTick.js';
-import cachedAllSends from './cachedJSONs/sends.js'
+import cachedAllSends from './cachedJSONs/sends.js';
+import fakeAllGrades from './cachedJSONs/allGrades.js';
 import { DATA_TYPE_ENUM, fetchAndJsonify, gradeSorter } from './utilities.js';
 import { getTicks, getRoutes } from './urls.js';
 
@@ -82,6 +83,16 @@ async function getAllSends(url) {
   return allSends;
 }
 
+async function allGradesInit() {
+  const allSends = [];
+  allSends.push(...fakeAllGrades);
+  const finalMap = new Map();
+  for (const send of allSends) {
+    finalMap.set(send.routeId, send);
+  }
+  return finalMap;
+}
+
 async function localInit(email) {
   const allSends = [];
   //allSends.push(...startPos0.ticks);
@@ -114,7 +125,7 @@ async function networkInit(data, DATA_TYPE) {
     const finalMap = await getAllSendData(allSends, sendMap);
     // console.warn(finalMap.forEach((value, key) => console.warn(value)));
 
-    let hardestFlash = {rating: '5.0'};
+    /* let hardestFlash = {rating: '5.0'};
     let hardestOnsight = {rating: '5.0'};
     for (const sendId of finalMap.keys()) {
       const send = finalMap.get(sendId);
@@ -130,12 +141,7 @@ async function networkInit(data, DATA_TYPE) {
           hardestOnsight = send;
         }
       }
-    }
-    console.warn(`Hardest Flash:`);
-    console.warn(hardestFlash);
-    console.warn(`Hardest Onsight:`);
-    console.warn(hardestOnsight);
-
+    } */
     return finalMap;
   }
   catch (e) {
@@ -177,6 +183,7 @@ async function init() {
 }
 
 export {
+  allGradesInit,
   getGradeMap,
   getStarCount,
   localInit,
