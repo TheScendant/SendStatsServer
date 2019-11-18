@@ -32,8 +32,8 @@ app.post('/sendData', async (req, res) => {
   if (req.body) {
     try {
       const [data, dataType] = getDataAndType(req.body);
-      const sendMap = await localInit(data, dataType);
-      // const sendMap = await networkInit(data, dataType);
+      // const sendMap = await localInit(data, dataType);
+      const sendMap = await networkInit(data, dataType);
       // const sendMap = await allGradesInit(data, dataType);
       const sends = [];
       for (const key of sendMap.keys()) {
