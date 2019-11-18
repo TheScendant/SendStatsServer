@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 const https = require("https");
 const agent = new https.Agent({
-  rejectUnauthorized: true
+  rejectUnauthorized: false
 })
 /**
  * Fetches a json of user sends
