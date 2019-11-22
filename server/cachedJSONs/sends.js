@@ -1,45 +1,138 @@
 export default [{
-  routeId: 105753952,
-  date: '2019-08-25',
+  routeId: 105755704,
+  date: '2019-11-17',
   pitches: 1,
   notes: '',
   style: 'Lead',
   leadStyle: 'Onsight',
-  tickId: 117652058,
+  tickId: 118056901,
   userStars: -1,
   userRating: '',
-  name: 'Popular Demand',
-  rating: '5.10c',
-  stars: 3.6
-},
+  name: 'Silverado',
+  rating: '5.11b',
+  stars: 4.7
+}
+,
 {
-  routeId: 105757699,
-  date: '2019-08-18',
+  routeId: 105749122,
+  date: '2019-11-17',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 118056899,
+  userStars: -1,
+  userRating: '',
+  name: 'Suburbia',
+  rating: '5.10b/c',
+  stars: 4.4
+}
+,
+{
+  routeId: 108408374,
+  date: '2019-11-17',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 118056898,
+  userStars: -1,
+  userRating: '',
+  name: 'It Takes a Village',
+  rating: '5.9+',
+  stars: 0
+}
+,
+{
+  routeId: 105752788,
+  date: '2019-11-02',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117979758,
+  userStars: -1,
+  userRating: '',
+  name: 'The Crack of Dawn',
+  rating: '5.10b',
+  stars: 4.4
+}
+,
+{
+  routeId: 105758512,
+  date: '2019-11-02',
+  pitches: 1,
+  notes: 'Eeeeeasy',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117979734,
+  userStars: 4,
+  userRating: '',
+  name: 'Crystal',
+  rating: '5.11b',
+  stars: 4.5
+}
+,
+{
+  routeId: 105758482,
+  date: '2019-11-02',
   pitches: 1,
   notes: '',
   style: 'Lead',
   leadStyle: 'Flash',
-  tickId: 117610658,
+  tickId: 117977406,
   userStars: -1,
   userRating: '',
-  name: 'PMT',
-  rating: '5.10c',
-  stars: 3.6
-},
+  name: 'Morning Stretch',
+  rating: '5.11b',
+  stars: 3.9
+}
+,
 {
-  routeId: 105754246,
-  date: '2019-08-18',
+  routeId: 105753295,
+  date: '2019-10-18',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117910190,
+  userStars: 4,
+  userRating: '',
+  name: 'Defenseless Betty',
+  rating: '5.12a',
+  stars: 4.5
+}
+,
+{
+  routeId: 105753754,
+  date: '2019-09-21',
   pitches: 1,
   notes: '',
   style: 'Lead',
   leadStyle: 'Onsight',
-  tickId: 117610657,
+  tickId: 117776813,
   userStars: -1,
   userRating: '',
-  name: 'PMS',
-  rating: '5.10c',
-  stars: 3.8
-},
+  name: 'Pellet Gun',
+  rating: '5.10d',
+  stars: 3.1
+}
+,
+{
+  routeId: 106852720,
+  date: '2019-10-17',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117906524,
+  userStars: -1,
+  userRating: '',
+  name: 'Irish Blood',
+  rating: '5.10a',
+  stars: 2.9
+}
+,
 {
   routeId: 105756046,
   date: '2019-08-17',
@@ -53,119 +146,98 @@ export default [{
   name: 'Feline',
   rating: '5.11b',
   stars: 4.6
-},
+}
+,
 {
-  routeId: 105753940,
-  date: '2019-08-03',
-  pitches: 1,
-  notes: '',
-  style: 'Lead',
-  leadStyle: 'Redpoint',
-  tickId: 117551327,
-  userStars: 3,
-  userRating: '',
-  name: 'Cold Cuts',
-  rating: '5.11a',
-  stars: 3.7
-},
-{
-  routeId: 105762684,
-  date: '2019-07-27',
-  pitches: 1,
-  notes: '',
-  style: 'Lead',
-  leadStyle: 'Redpoint',
-  tickId: 117509781,
-  userStars: -1,
-  userRating: '',
-  name: 'Unfamiliar Strangers',
-  rating: '5.9+',
-  stars: 3.2
-},
-{
-  routeId: 105758080,
-  date: '2019-07-27',
-  pitches: 1,
-  notes: '',
-  style: 'Lead',
-  leadStyle: 'Redpoint',
-  tickId: 117509755,
-  userStars: 3,
-  userRating: '5.12a',
-  name: 'Days of Future Passed aka Our Future Has Passed',
-  rating: '5.12a',
-  stars: 3.7
-},
-{
-  routeId: 105761268,
-  date: '2019-07-06',
-  pitches: 1,
-  notes: '',
-  style: 'Lead',
-  leadStyle: 'Onsight',
-  tickId: 117316090,
-  userStars: -1,
-  userRating: '',
-  name: 'Marquis de Sade',
-  rating: '5.10c',
-  stars: 3.3
-},
-{
-  routeId: 105862660,
-  date: '2019-07-06',
-  pitches: 1,
-  notes: '',
-  style: 'Lead',
-  leadStyle: 'Onsight',
-  tickId: 117316088,
-  userStars: -1,
-  userRating: '',
-  name: 'Sword In The Stone',
-  rating: '5.9+',
-  stars: 3.4
-},
-{
-  routeId: 105761262,
-  date: '2019-07-06',
+  routeId: 105759801,
+  date: '2019-10-15',
   pitches: 1,
   notes: '',
   style: 'Lead',
   leadStyle: 'Flash',
-  tickId: 117316087,
+  tickId: 117898654,
   userStars: -1,
   userRating: '',
-  name: 'Slayer',
-  rating: '5.10b',
-  stars: 3.1
-},
+  name: 'Plastic Prince',
+  rating: '5.11c',
+  stars: 3.6
+}
+,
 {
-  routeId: 105758044,
-  date: '2019-07-04',
-  pitches: 2,
-  notes: '',
-  style: 'Lead',
-  leadStyle: 'Onsight',
-  tickId: 117306446,
-  userStars: -1,
-  userRating: '',
-  name: 'Pete and Benz',
-  rating: '5.7',
-  stars: 3.4
-},
-{
-  routeId: 106248461,
-  date: '2019-06-15',
+  routeId: 105753394,
+  date: '2019-10-15',
   pitches: 1,
   notes: '',
   style: 'Lead',
   leadStyle: 'Onsight',
-  tickId: 117130095,
+  tickId: 117898652,
   userStars: -1,
   userRating: '',
-  name: 'Costello',
-  rating: '5.11a',
-  stars: 3.5
-},
+  name: 'Merry Maids',
+  rating: '5.10a',
+  stars: 3.8
+}
+,
+{
+  routeId: 105753400,
+  date: '2019-10-15',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117898650,
+  userStars: 4,
+  userRating: '',
+  name: 'Cardinal Sin',
+  rating: '5.12a',
+  stars: 4.5
+}
+,
+{
+  routeId: 113871632,
+  date: '2019-10-14',
+  pitches: 1,
+  notes: 'Recommended by Nina herself',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117898641,
+  userStars: 4,
+  userRating: '',
+  name: 'Atlas',
+  rating: '5.12a',
+  stars: 4.2
+}
+,
+{
+  routeId: 106248473,
+  date: '2019-10-11',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Flash',
+  tickId: 117877991,
+  userStars: -1,
+  userRating: '',
+  name: 'Pryor',
+  rating: '5.10a',
+  stars: 3.3
+}
+,
+{
+  routeId: 105997439,
+  date: '2019-10-11',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117877988,
+  userStars: 4,
+  userRating: '',
+  name: 'Jail Bait',
+  rating: '5.11c',
+  stars: 4.2
+}
+,
 {
   routeId: 106231707,
   date: '2019-06-15',
@@ -179,7 +251,263 @@ export default [{
   name: 'Carlin',
   rating: '5.10a',
   stars: 3.8
-},
+}
+,
+{
+  routeId: 106882881,
+  date: '2019-09-22',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117776810,
+  userStars: 4,
+  userRating: '',
+  name: 'Genesis',
+  rating: '5.12a',
+  stars: 4.8
+}
+,
+{
+  routeId: 105753391,
+  date: '2019-09-21',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117776811,
+  userStars: 4,
+  userRating: '',
+  name: '80 Feet of Meat',
+  rating: '5.11b',
+  stars: 4.2
+}
+,
+{
+  routeId: 105764160,
+  date: '2019-09-14',
+  pitches: 1,
+  notes: 'Started on the 11a and got lost ',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117741086,
+  userStars: -1,
+  userRating: '',
+  name: 'Persistent Vegetative State',
+  rating: '5.10a/b',
+  stars: 4.1
+}
+,
+{
+  routeId: 105762957,
+  date: '2019-09-14',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117740573,
+  userStars: 4,
+  userRating: '',
+  name: 'Bush Administration',
+  rating: '5.10b/c',
+  stars: 3.9
+}
+,
+{
+  routeId: 105750487,
+  date: '2019-09-14',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117739155,
+  userStars: 4,
+  userRating: '5.11b',
+  name: 'Curvaceous',
+  rating: '5.11b',
+  stars: 4.5
+}
+,
+{
+  routeId: 105748409,
+  date: '2019-09-14',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Flash',
+  tickId: 117738855,
+  userStars: 3,
+  userRating: '5.10c',
+  name: 'Recovery',
+  rating: '5.10c',
+  stars: 3.3
+}
+,
+{
+  routeId: 105753952,
+  date: '2019-08-25',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117652058,
+  userStars: -1,
+  userRating: '',
+  name: 'Popular Demand',
+  rating: '5.10c',
+  stars: 3.6
+}
+,
+{
+  routeId: 105757699,
+  date: '2019-08-18',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Flash',
+  tickId: 117610658,
+  userStars: -1,
+  userRating: '',
+  name: 'PMT',
+  rating: '5.10c',
+  stars: 3.6
+}
+,
+{
+  routeId: 105754246,
+  date: '2019-08-18',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117610657,
+  userStars: -1,
+  userRating: '',
+  name: 'PMS',
+  rating: '5.10c',
+  stars: 3.8
+}
+,
+{
+  routeId: 105753940,
+  date: '2019-08-03',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117551327,
+  userStars: 3,
+  userRating: '',
+  name: 'Cold Cuts',
+  rating: '5.11a',
+  stars: 3.7
+}
+,
+{
+  routeId: 105762684,
+  date: '2019-07-27',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117509781,
+  userStars: -1,
+  userRating: '',
+  name: 'Unfamiliar Strangers',
+  rating: '5.9+',
+  stars: 3.2
+}
+,
+{
+  routeId: 105758080,
+  date: '2019-07-27',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Redpoint',
+  tickId: 117509755,
+  userStars: 3,
+  userRating: '5.12a',
+  name: 'Days of Future Passed aka Our Future Has Passed',
+  rating: '5.12a',
+  stars: 3.7
+}
+,
+{
+  routeId: 105761268,
+  date: '2019-07-06',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117316090,
+  userStars: -1,
+  userRating: '',
+  name: 'Marquis de Sade',
+  rating: '5.10c',
+  stars: 3.3
+}
+,
+{
+  routeId: 105862660,
+  date: '2019-07-06',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117316088,
+  userStars: -1,
+  userRating: '',
+  name: 'Sword In The Stone',
+  rating: '5.9+',
+  stars: 3.4
+}
+,
+{
+  routeId: 105761262,
+  date: '2019-07-06',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Flash',
+  tickId: 117316087,
+  userStars: -1,
+  userRating: '',
+  name: 'Slayer',
+  rating: '5.10b',
+  stars: 3.1
+}
+,
+{
+  routeId: 105758044,
+  date: '2019-07-04',
+  pitches: 2,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117306446,
+  userStars: -1,
+  userRating: '',
+  name: 'Pete and Benz',
+  rating: '5.7',
+  stars: 3.4
+}
+,
+{
+  routeId: 106248461,
+  date: '2019-06-15',
+  pitches: 1,
+  notes: '',
+  style: 'Lead',
+  leadStyle: 'Onsight',
+  tickId: 117130095,
+  userStars: -1,
+  userRating: '',
+  name: 'Costello',
+  rating: '5.11a',
+  stars: 3.5
+}
+,
 {
   routeId: 106252682,
   date: '2019-06-15',
@@ -193,7 +521,8 @@ export default [{
   name: 'Sellers',
   rating: '5.10a/b',
   stars: 3
-},
+}
+,
 {
   routeId: 106175311,
   date: '2019-06-09',
@@ -207,7 +536,8 @@ export default [{
   name: 'Northwest Arete',
   rating: 'V1',
   stars: 3.1
-},
+}
+,
 {
   routeId: 106183208,
   date: '2019-06-09',
@@ -221,7 +551,8 @@ export default [{
   name: 'Barb Wire',
   rating: 'V2',
   stars: 2.6
-},
+}
+,
 {
   routeId: 105792476,
   date: '2019-06-09',
@@ -235,7 +566,8 @@ export default [{
   name: 'Stalactite',
   rating: 'V2',
   stars: 2.8
-},
+}
+,
 {
   routeId: 105792465,
   date: '2019-06-09',
@@ -249,7 +581,8 @@ export default [{
   name: 'The Wave',
   rating: 'V2',
   stars: 3.5
-},
+}
+,
 {
   routeId: 114195097,
   date: '2019-04-14',
@@ -261,9 +594,10 @@ export default [{
   userStars: -1,
   userRating: '',
   name: 'Molotov Cockfight',
-  rating: '5.9+',
-  stars: 3.2
-},
+  rating: '5.9',
+  stars: 3.1
+}
+,
 {
   routeId: 114195105,
   date: '2019-04-14',
@@ -277,7 +611,8 @@ export default [{
   name: 'No Special Talent',
   rating: '5.10d',
   stars: 3.6
-},
+}
+,
 {
   routeId: 106931832,
   date: '2019-03-24',
@@ -291,7 +626,8 @@ export default [{
   name: 'Lambda.1',
   rating: 'V0',
   stars: 0
-},
+}
+,
 {
   routeId: 113970820,
   date: '2019-03-23',
@@ -305,7 +641,8 @@ export default [{
   name: 'Explain Yourself',
   rating: '5.10a',
   stars: 2.6
-},
+}
+,
 {
   routeId: 113892902,
   date: '2019-03-23',
@@ -318,8 +655,9 @@ export default [{
   userRating: '',
   name: 'Raggedy Andy',
   rating: '5.9',
-  stars: 2.8
-},
+  stars: 2.7
+}
+,
 {
   routeId: 112511931,
   date: '2019-03-23',
@@ -333,7 +671,8 @@ export default [{
   name: 'Team Umizoomi',
   rating: '5.10b',
   stars: 3.4
-},
+}
+,
 {
   routeId: 105749461,
   date: '2019-03-23',
@@ -347,7 +686,8 @@ export default [{
   name: 'First Impressions',
   rating: '5.9+',
   stars: 3.7
-},
+}
+,
 {
   routeId: 105759129,
   date: '2019-02-02',
@@ -361,7 +701,8 @@ export default [{
   name: 'White Punks on Pockets',
   rating: '5.9',
   stars: 2.7
-},
+}
+,
 {
   routeId: 105752839,
   date: '2019-02-02',
@@ -375,7 +716,8 @@ export default [{
   name: 'Dihedrus',
   rating: '5.10b',
   stars: 4
-},
+}
+,
 {
   routeId: 105753880,
   date: '2019-02-02',
@@ -389,7 +731,8 @@ export default [{
   name: 'Fantasia',
   rating: '5.11c',
   stars: 4
-},
+}
+,
 {
   routeId: 105892056,
   date: '2019-01-27',
@@ -403,7 +746,8 @@ export default [{
   name: 'The Gambler',
   rating: '5.11-',
   stars: 3.9
-},
+}
+,
 {
   routeId: 105788000,
   date: '2019-01-27',
@@ -417,7 +761,8 @@ export default [{
   name: 'Glitter Gulch',
   rating: '5.11a',
   stars: 4.4
-},
+}
+,
 {
   routeId: 105923032,
   date: '2019-01-27',
@@ -431,7 +776,8 @@ export default [{
   name: 'Gridlock',
   rating: '5.11a',
   stars: 3.5
-},
+}
+,
 {
   routeId: 105732563,
   date: '2019-01-24',
@@ -445,7 +791,8 @@ export default [{
   name: 'Pump First, Pay Later',
   rating: '5.10b',
   stars: 3
-},
+}
+,
 {
   routeId: 105732560,
   date: '2019-01-24',
@@ -459,7 +806,8 @@ export default [{
   name: 'Gelatin Pooch',
   rating: '5.10a',
   stars: 3.1
-},
+}
+,
 {
   routeId: 106601301,
   date: '2019-01-26',
@@ -473,7 +821,8 @@ export default [{
   name: 'Claimjumpers Special',
   rating: '5.10c',
   stars: 3.6
-},
+}
+,
 {
   routeId: 107424504,
   date: '2019-01-26',
@@ -487,7 +836,8 @@ export default [{
   name: 'Edward Silverhands',
   rating: '5.10a',
   stars: 2.6
-},
+}
+,
 {
   routeId: 105910331,
   date: '2019-01-25',
@@ -501,7 +851,8 @@ export default [{
   name: 'First Born',
   rating: '5.10b',
   stars: 2.8
-},
+}
+,
 {
   routeId: 105885132,
   date: '2019-01-25',
@@ -515,7 +866,8 @@ export default [{
   name: 'Shut Up and Climb',
   rating: '5.11b',
   stars: 3.9
-},
+}
+,
 {
   routeId: 111020664,
   date: '2019-01-25',
@@ -529,7 +881,8 @@ export default [{
   name: 'The Last In Line',
   rating: '5.10b',
   stars: 3.2
-},
+}
+,
 {
   routeId: 107367973,
   date: '2019-01-25',
@@ -543,7 +896,8 @@ export default [{
   name: 'Fall of Vegas',
   rating: '5.10a',
   stars: 3.2
-},
+}
+,
 {
   routeId: 105975221,
   date: '2019-01-25',
@@ -556,8 +910,9 @@ export default [{
   userRating: '',
   name: 'Skid Mark',
   rating: '5.9+',
-  stars: 3.5
-},
+  stars: 3.6
+}
+,
 {
   routeId: 105732566,
   date: '2019-01-24',
@@ -571,7 +926,8 @@ export default [{
   name: 'Running Amuck',
   rating: '5.10c',
   stars: 3.3
-},
+}
+,
 {
   routeId: 105748403,
   date: '2018-11-09',
@@ -585,7 +941,8 @@ export default [{
   name: 'Vixen',
   rating: '5.10c',
   stars: 3.3
-},
+}
+,
 {
   routeId: 111769220,
   date: '2018-10-20',
@@ -599,7 +956,8 @@ export default [{
   name: 'Deeper is Better',
   rating: '5.10b',
   stars: 3.7
-},
+}
+,
 {
   routeId: 106081922,
   date: '2018-10-20',
@@ -613,7 +971,8 @@ export default [{
   name: 'Breakfast Burrito',
   rating: '5.10c',
   stars: 4.7
-},
+}
+,
 {
   routeId: 106081931,
   date: '2018-10-20',
@@ -627,7 +986,8 @@ export default [{
   name: 'Fire and Brimstone',
   rating: '5.10d',
   stars: 4.6
-},
+}
+,
 {
   routeId: 106586504,
   date: '2018-10-17',
@@ -641,7 +1001,8 @@ export default [{
   name: 'Air Ride Equipped',
   rating: '5.11a',
   stars: 4.6
-},
+}
+,
 {
   routeId: 106333612,
   date: '2018-10-18',
@@ -655,7 +1016,8 @@ export default [{
   name: 'Banshee',
   rating: '5.11c',
   stars: 4.9
-},
+}
+,
 {
   routeId: 106064500,
   date: '2018-10-17',
@@ -669,7 +1031,8 @@ export default [{
   name: 'Hey There Fancy Pants',
   rating: '5.10c',
   stars: 3.7
-},
+}
+,
 {
   routeId: 106085043,
   date: '2017-03-12',
@@ -683,7 +1046,8 @@ export default [{
   name: 'Send Me on My Way',
   rating: '5.9-',
   stars: 4.1
-},
+}
+,
 {
   routeId: 106061906,
   date: '2017-03-12',
@@ -697,7 +1061,8 @@ export default [{
   name: 'Rat Stew',
   rating: '5.10a',
   stars: 4.1
-},
+}
+,
 {
   routeId: 106061920,
   date: '2018-10-16',
@@ -711,7 +1076,8 @@ export default [{
   name: 'Critters on the Cliff',
   rating: '5.10c',
   stars: 4
-},
+}
+,
 {
   routeId: 109480361,
   date: '2018-10-15',
@@ -725,7 +1091,8 @@ export default [{
   name: 'Grandpa Joe',
   rating: '5.9',
   stars: 3.6
-},
+}
+,
 {
   routeId: 107892930,
   date: '2018-10-15',
@@ -739,7 +1106,8 @@ export default [{
   name: 'Robotic Thumb',
   rating: '5.10b',
   stars: 4.3
-},
+}
+,
 {
   routeId: 106927822,
   date: '2018-10-15',
@@ -753,7 +1121,8 @@ export default [{
   name: 'The Glass Elevator',
   rating: '5.10d',
   stars: 4
-},
+}
+,
 {
   routeId: 106782060,
   date: '2018-10-15',
@@ -767,7 +1136,8 @@ export default [{
   name: 'Oompa',
   rating: '5.10b',
   stars: 4
-},
+}
+,
 {
   routeId: 110293313,
   date: '2018-10-13',
@@ -781,7 +1151,8 @@ export default [{
   name: 'No Brain, No Pain',
   rating: '5.10b',
   stars: 3.5
-},
+}
+,
 {
   routeId: 106577204,
   date: '2018-10-13',
@@ -795,7 +1166,8 @@ export default [{
   name: 'Random Precision',
   rating: '5.11b',
   stars: 4.6
-},
+}
+,
 {
   routeId: 106125118,
   date: '2018-10-13',
@@ -809,7 +1181,8 @@ export default [{
   name: 'Happy Trails',
   rating: '5.10d',
   stars: 3.5
-},
+}
+,
 {
   routeId: 106125110,
   date: '2018-10-13',
@@ -822,8 +1195,9 @@ export default [{
   userRating: '',
   name: 'The King Lives On',
   rating: '5.10b',
-  stars: 3.6
-},
+  stars: 3.7
+}
+,
 {
   routeId: 106154626,
   date: '2018-10-13',
@@ -833,11 +1207,12 @@ export default [{
   leadStyle: 'Redpoint',
   tickId: 115419100,
   userStars: 4,
-  userRating: '',
+  userRating: '5.10c/d',
   name: 'Johnny B. Good',
   rating: '5.11a',
   stars: 4.3
-},
+}
+,
 {
   routeId: 106125070,
   date: '2017-03-15',
@@ -851,7 +1226,8 @@ export default [{
   name: 'A Brief History of Climb',
   rating: '5.10b',
   stars: 4.7
-},
+}
+,
 {
   routeId: 106885744,
   date: '2018-10-12',
@@ -864,8 +1240,9 @@ export default [{
   userRating: '',
   name: 'Significant Other',
   rating: '5.10b',
-  stars: 3
-},
+  stars: 2.9
+}
+,
 {
   routeId: 106885753,
   date: '2018-10-12',
@@ -879,7 +1256,8 @@ export default [{
   name: 'Bulldozer',
   rating: '5.10a',
   stars: 3.4
-},
+}
+,
 {
   routeId: 106885779,
   date: '2018-10-12',
@@ -893,7 +1271,8 @@ export default [{
   name: 'K.S.B.',
   rating: '5.10d',
   stars: 4.5
-},
+}
+,
 {
   routeId: 108172884,
   date: '2018-10-06',
@@ -906,8 +1285,9 @@ export default [{
   userRating: '',
   name: 'Beetle Byway',
   rating: '5.8',
-  stars: 4.2
-},
+  stars: 4.1
+}
+,
 {
   routeId: 109023567,
   date: '2018-09-29',
@@ -921,7 +1301,8 @@ export default [{
   name: 'King Lichen Me',
   rating: '5.10a',
   stars: 3.7
-},
+}
+,
 {
   routeId: 105963848,
   date: '2018-09-28',
@@ -935,7 +1316,8 @@ export default [{
   name: 'Rico Suave',
   rating: '5.10a',
   stars: 4.5
-},
+}
+,
 {
   routeId: 105918469,
   date: '2018-04-21',
@@ -949,7 +1331,8 @@ export default [{
   name: 'Satisfaction Guaranteed',
   rating: '5.11-',
   stars: 4.8
-},
+}
+,
 {
   routeId: 105918472,
   date: '2018-04-21',
@@ -963,7 +1346,8 @@ export default [{
   name: 'Orange Oswald',
   rating: '5.10a',
   stars: 3.9
-},
+}
+,
 {
   routeId: 106886454,
   date: '2018-04-20',
@@ -977,7 +1361,8 @@ export default [{
   name: 'Cottonmouth',
   rating: '5.10a',
   stars: 4.3
-},
+}
+,
 {
   routeId: 106852068,
   date: '2018-04-15',
@@ -991,7 +1376,8 @@ export default [{
   name: 'Scaphoid',
   rating: '5.9',
   stars: 3.5
-},
+}
+,
 {
   routeId: 109063118,
   date: '2018-04-15',
@@ -1004,8 +1390,9 @@ export default [{
   userRating: '',
   name: 'Free Range Show Poodle',
   rating: '5.8',
-  stars: 4.1
-},
+  stars: 4
+}
+,
 {
   routeId: 105966939,
   date: '2018-04-14',
@@ -1019,7 +1406,8 @@ export default [{
   name: 'First Steps',
   rating: '5.10c',
   stars: 4
-},
+}
+,
 {
   routeId: 105944381,
   date: '2018-04-14',
@@ -1033,7 +1421,8 @@ export default [{
   name: 'The Green Piece',
   rating: '5.10b',
   stars: 3.8
-},
+}
+,
 {
   routeId: 105966917,
   date: '2018-04-14',
@@ -1047,7 +1436,8 @@ export default [{
   name: 'Low Voltage',
   rating: '5.10b',
   stars: 3.6
-},
+}
+,
 {
   routeId: 105966922,
   date: '2018-04-14',
@@ -1061,7 +1451,8 @@ export default [{
   name: 'Springer',
   rating: '5.10b',
   stars: 3.5
-},
+}
+,
 {
   routeId: 105944377,
   date: '2018-04-14',
@@ -1075,7 +1466,8 @@ export default [{
   name: 'Flight of the Gumby',
   rating: '5.9+',
   stars: 4.5
-},
+}
+,
 {
   routeId: 105993751,
   date: '2018-04-13',
@@ -1089,7 +1481,8 @@ export default [{
   name: 'Menace Alert',
   rating: '5.9+',
   stars: 3.8
-},
+}
+,
 {
   routeId: 105993756,
   date: '2018-04-13',
@@ -1103,7 +1496,8 @@ export default [{
   name: 'Chewy',
   rating: '5.10b',
   stars: 3.7
-},
+}
+,
 {
   routeId: 111412963,
   date: '2017-10-21',
@@ -1117,7 +1511,8 @@ export default [{
   name: 'Bridge Burner',
   rating: '5.10a',
   stars: 3.8
-},
+}
+,
 {
   routeId: 112835534,
   date: '2017-10-15',
@@ -1130,8 +1525,9 @@ export default [{
   userRating: '',
   name: 'Little Purple Flowers',
   rating: '5.9',
-  stars: 4.2
-},
+  stars: 4.3
+}
+,
 {
   routeId: 112835323,
   date: '2017-10-15',
@@ -1145,7 +1541,8 @@ export default [{
   name: 'Thieves in the Temple',
   rating: '5.8',
   stars: 3.7
-},
+}
+,
 {
   routeId: 106138609,
   date: '2017-10-15',
@@ -1159,7 +1556,8 @@ export default [{
   name: "Mrs. Field's Follies",
   rating: '5.8',
   stars: 4.4
-},
+}
+,
 {
   routeId: 106138634,
   date: '2017-10-15',
@@ -1173,7 +1571,8 @@ export default [{
   name: 'Zeitgeist',
   rating: '5.10a',
   stars: 3.6
-},
+}
+,
 {
   routeId: 106138628,
   date: '2017-10-15',
@@ -1187,7 +1586,8 @@ export default [{
   name: 'Crescendo',
   rating: '5.9+',
   stars: 3.5
-},
+}
+,
 {
   routeId: 105987545,
   date: '2017-10-15',
@@ -1201,7 +1601,8 @@ export default [{
   name: 'Kinesthetica',
   rating: '5.10c',
   stars: 4.6
-},
+}
+,
 {
   routeId: 106418047,
   date: '2017-10-15',
@@ -1215,7 +1616,8 @@ export default [{
   name: 'Badass Tattoo',
   rating: '5.10b',
   stars: 4.1
-},
+}
+,
 {
   routeId: 111054408,
   date: '2017-10-13',
@@ -1228,8 +1630,9 @@ export default [{
   userRating: '',
   name: 'Destroying Angel',
   rating: '5.10a/b',
-  stars: 2.9
-},
+  stars: 3
+}
+,
 {
   routeId: 109308672,
   date: '2017-10-13',
@@ -1243,7 +1646,8 @@ export default [{
   name: 'Nasty Wieners',
   rating: '5.9+',
   stars: 3.3
-},
+}
+,
 {
   routeId: 106188769,
   date: '2017-09-24',
@@ -1257,7 +1661,8 @@ export default [{
   name: 'Blood, Sweat and Chalk',
   rating: '5.9+',
   stars: 4.4
-},
+}
+,
 {
   routeId: 107560400,
   date: '2017-09-24',
@@ -1271,7 +1676,8 @@ export default [{
   name: 'Shipwrecked',
   rating: '5.9',
   stars: 4.1
-},
+}
+,
 {
   routeId: 107208763,
   date: '2017-09-24',
@@ -1285,7 +1691,8 @@ export default [{
   name: 'Castaways',
   rating: '5.8',
   stars: 3.5
-},
+}
+,
 {
   routeId: 106614620,
   date: '2017-09-11',
@@ -1299,7 +1706,8 @@ export default [{
   name: 'Bethel',
   rating: '5.10a',
   stars: 3.8
-},
+}
+,
 {
   routeId: 106614611,
   date: '2017-09-11',
@@ -1313,7 +1721,8 @@ export default [{
   name: '59" DrillBitch',
   rating: '5.10a',
   stars: 3.9
-},
+}
+,
 {
   routeId: 106921324,
   date: '2017-09-11',
@@ -1326,8 +1735,9 @@ export default [{
   userRating: '',
   name: 'Mancala',
   rating: '5.10a',
-  stars: 3.5
-},
+  stars: 3.6
+}
+,
 {
   routeId: 106170048,
   date: '2017-09-11',
@@ -1341,7 +1751,8 @@ export default [{
   name: 'Fifth Bolt Faith',
   rating: '5.10c',
   stars: 3.9
-},
+}
+,
 {
   routeId: 106065471,
   date: '2017-09-11',
@@ -1355,7 +1766,8 @@ export default [{
   name: 'Plate Tectonics',
   rating: '5.10a',
   stars: 4.3
-},
+}
+,
 {
   routeId: 106065461,
   date: '2017-09-11',
@@ -1369,7 +1781,8 @@ export default [{
   name: "Gettin' Lucky in Kentucky",
   rating: '5.10b',
   stars: 4.4
-},
+}
+,
 {
   routeId: 106189887,
   date: '2017-09-11',
@@ -1383,7 +1796,8 @@ export default [{
   name: 'Tall Cool One',
   rating: '5.9',
   stars: 3.5
-},
+}
+,
 {
   routeId: 106885726,
   date: '2017-09-10',
@@ -1397,7 +1811,8 @@ export default [{
   name: 'Miranda Rayne',
   rating: '5.9',
   stars: 4
-},
+}
+,
 {
   routeId: 107685747,
   date: '2017-09-10',
@@ -1410,8 +1825,9 @@ export default [{
   userRating: '5.10a',
   name: 'Monobrow',
   rating: '5.10a',
-  stars: 3.5
-},
+  stars: 3.6
+}
+,
 {
   routeId: 107684861,
   date: '2017-09-10',
@@ -1425,7 +1841,8 @@ export default [{
   name: 'Rorshach Inkblot Test',
   rating: '5.8+',
   stars: 3.1
-},
+}
+,
 {
   routeId: 106061901,
   date: '2017-09-09',
@@ -1439,7 +1856,8 @@ export default [{
   name: 'Return of Manimal',
   rating: '5.10d',
   stars: 4.4
-},
+}
+,
 {
   routeId: 107321623,
   date: '2017-09-09',
@@ -1453,7 +1871,8 @@ export default [{
   name: 'Watering Hole',
   rating: '5.10a',
   stars: 3.3
-},
+}
+,
 {
   routeId: 106968604,
   date: '2017-09-09',
@@ -1467,7 +1886,8 @@ export default [{
   name: 'Ryanosaurus',
   rating: '5.9',
   stars: 3.9
-},
+}
+,
 {
   routeId: 106968591,
   date: '2017-09-09',
@@ -1481,7 +1901,8 @@ export default [{
   name: 'Prehistoric Extermination',
   rating: '5.8',
   stars: 4
-},
+}
+,
 {
   routeId: 106130303,
   date: '2017-09-09',
@@ -1495,7 +1916,8 @@ export default [{
   name: "Workin' For The Weekend",
   rating: '5.10c',
   stars: 3.9
-},
+}
+,
 {
   routeId: 106152665,
   date: '2017-08-06',
@@ -1509,7 +1931,8 @@ export default [{
   name: 'I Love Big Jugs',
   rating: '5.8',
   stars: 3.4
-},
+}
+,
 {
   routeId: 106000377,
   date: '2017-07-25',
@@ -1523,7 +1946,8 @@ export default [{
   name: 'Thais',
   rating: '5.6',
   stars: 3.7
-},
+}
+,
 {
   routeId: 106026660,
   date: '2017-03-16',
@@ -1536,8 +1960,9 @@ export default [{
   userRating: '',
   name: 'Valor Over Discretion',
   rating: '5.8',
-  stars: 3.2
-},
+  stars: 3.1
+}
+,
 {
   routeId: 106125099,
   date: '2017-03-15',
@@ -1551,7 +1976,8 @@ export default [{
   name: '27 Years of Climbing',
   rating: '5.8',
   stars: 4.5
-},
+}
+,
 {
   routeId: 107537571,
   date: '2017-03-12',
@@ -1565,7 +1991,8 @@ export default [{
   name: 'Trundling Kentucky',
   rating: '5.8',
   stars: 3.1
-},
+}
+,
 {
   routeId: 106286280,
   date: '2017-03-12',
@@ -1579,7 +2006,8 @@ export default [{
   name: 'Sweet Jane',
   rating: '5.8-',
   stars: 3.1
-},
+}
+,
 {
   routeId: 106085047,
   date: '2017-03-12',
@@ -1593,7 +2021,8 @@ export default [{
   name: 'The Offering',
   rating: '5.7',
   stars: 3.6
-},
+}
+,
 {
   routeId: 108524421,
   date: '2017-03-12',
@@ -1607,7 +2036,8 @@ export default [{
   name: 'Ohio Climbing',
   rating: '5.8',
   stars: 3.7
-},
+}
+,
 {
   routeId: 105892929,
   date: '2017-03-11',
@@ -1621,7 +2051,8 @@ export default [{
   name: 'Ledger Line',
   rating: '5.7',
   stars: 3.2
-},
+}
+,
 {
   routeId: 105882846,
   date: '2017-03-11',
@@ -1635,7 +2066,8 @@ export default [{
   name: 'C Sharp or B Flat',
   rating: '5.7',
   stars: 3.4
-},
+}
+,
 {
   routeId: 105878619,
   date: '2016-10-10',
@@ -1649,7 +2081,8 @@ export default [{
   name: 'War and  Peace',
   rating: '5.9+',
   stars: 3.7
-},
+}
+,
 {
   routeId: 105923846,
   date: '2016-10-10',
@@ -1663,7 +2096,8 @@ export default [{
   name: 'Snake Skin Slab',
   rating: '5.8',
   stars: 3.2
-},
+}
+,
 {
   routeId: 105878204,
   date: '2016-10-10',
@@ -1677,7 +2111,8 @@ export default [{
   name: 'Masterpiece',
   rating: '5.10a',
   stars: 4.1
-},
+}
+,
 {
   routeId: 105962922,
   date: '2016-10-09',
@@ -1691,7 +2126,8 @@ export default [{
   name: 'Rise and Shine',
   rating: '5.7',
   stars: 3.4
-},
+}
+,
 {
   routeId: 105966659,
   date: '2016-10-09',
@@ -1705,7 +2141,8 @@ export default [{
   name: 'Easily Amused',
   rating: '5.7',
   stars: 2.7
-},
+}
+,
 {
   routeId: 106071435,
   date: '2016-10-09',
@@ -1719,7 +2156,8 @@ export default [{
   name: 'Squeeze My Lemon',
   rating: '5.8',
   stars: 3.2
-},
+}
+,
 {
   routeId: 106058997,
   date: '2016-10-08',
@@ -1733,7 +2171,8 @@ export default [{
   name: 'Fat Man',
   rating: '5.7',
   stars: 2.8
-},
+}
+,
 {
   routeId: 107543321,
   date: '2016-10-08',
@@ -1747,7 +2186,8 @@ export default [{
   name: 'The Maltese Falcon',
   rating: '5.8',
   stars: 3.3
-},
+}
+,
 {
   routeId: 106148885,
   date: '2016-10-08',
@@ -1761,7 +2201,8 @@ export default [{
   name: 'Toxic Gumbo',
   rating: '5.8',
   stars: 3.5
-},
+}
+,
 {
   routeId: 105840572,
   date: '2016-09-03',
@@ -1775,7 +2216,8 @@ export default [{
   name: 'Apoplexy',
   rating: '5.9',
   stars: 4.3
-},
+}
+,
 {
   routeId: 105821512,
   date: '2016-09-03',
@@ -1789,7 +2231,8 @@ export default [{
   name: 'Son of Easy O',
   rating: '5.8',
   stars: 4.8
-},
+}
+,
 {
   routeId: 105799779,
   date: '2016-09-03',
@@ -1803,7 +2246,8 @@ export default [{
   name: "Ken's Crack",
   rating: '5.7+',
   stars: 4
-},
+}
+,
 {
   routeId: 105799721,
   date: '2016-09-03',
@@ -1817,7 +2261,8 @@ export default [{
   name: 'Horseman',
   rating: '5.5',
   stars: 4.4
-},
+}
+,
 {
   routeId: 106092676,
   date: '2016-06-19',
@@ -1830,8 +2275,9 @@ export default [{
   userRating: '',
   name: "Artist's Arete (mid-cliff Start)",
   rating: '5.6',
-  stars: 3.6
-},
+  stars: 3.5
+}
+,
 {
   routeId: 106092119,
   date: '2016-06-19',
@@ -1845,4 +2291,4 @@ export default [{
   name: 'Brass Balls',
   rating: '5.8',
   stars: 3.8
-}];
+}]
