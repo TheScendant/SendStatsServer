@@ -1,21 +1,28 @@
 import express from 'express';
 import 'babel-polyfill';
-import { allGradesInit, getStarCount, localInit, networkInit } from './getSendData.js';
+import { allGradesInit, getStarCount, localInit as gsdL, networkInit as gsdN } from './getSendData.js';
 import { getDataAndType } from './utilities.js';
-import {networkInit as getUserData, localInit as getUserDataLocal} from './getUserData';
+import {networkInit as gudN, localInit as gudL} from './getUserData';
 
 
 const app = express();
 app.use(express.json())
 
+const useCachedData = false;
+let getUserData, getSendData;
+if (useCachedData) {
+  getUserData = gudL;
+  getSendData = gsdL
+} else {
+  getUserData = gudN;
+  getSendData = gsdN;
+}
+
 app.post('/userData', async (req, res) => {
   let message;
   try {
     const [data, dataType] = getDataAndType(req.body);
-    // const userData = await getUserData(data, dataType);
-    const userData = await getUserDataLocal(data, dataType);
-
-    // add some checking here
+    const userData = await getUserData(data, dataType);
     message = userData;
   } catch(e) {
     res.status(500);
@@ -32,9 +39,7 @@ app.post('/sendData', async (req, res) => {
   if (req.body) {
     try {
       const [data, dataType] = getDataAndType(req.body);
-      // const sendMap = await localInit(data, dataType);
-      const sendMap = await networkInit(data, dataType);
-      // const sendMap = await allGradesInit(data, dataType);
+      const sendMap = await getSendData(data, dataType);
       const sends = [];
       for (const key of sendMap.keys()) {
         sends.push(sendMap.get(key));
