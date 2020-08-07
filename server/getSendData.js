@@ -117,25 +117,6 @@ async function networkInit(data, DATA_TYPE) {
       sendMap.set(send.routeId, send);
     }
     const finalMap = await getAllSendData(allSends, sendMap);
-    // console.warn(finalMap.forEach((value, key) => console.warn(value)));
-
-    /* let hardestFlash = {rating: '5.0'};
-    let hardestOnsight = {rating: '5.0'};
-    for (const sendId of finalMap.keys()) {
-      const send = finalMap.get(sendId);
-      const {leadStyle, rating} = send;
-      if (leadStyle && leadStyle.toLowerCase() === 'flash') {
-        const harder = gradeSorter(rating, hardestFlash.rating);
-        if (harder === 1) {
-          hardestFlash = send;
-        }
-      } else if (leadStyle && leadStyle.toLowerCase() === 'onsight') {
-        const harder = gradeSorter(rating, hardestOnsight.rating);
-        if (harder === 1) {
-          hardestOnsight = send;
-        }
-      }
-    } */
     return finalMap;
   }
   catch (e) {

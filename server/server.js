@@ -8,7 +8,9 @@ import {networkInit as gudN, localInit as gudL} from './getUserData';
 const app = express();
 app.use(express.json())
 
-const useCachedData = false;
+const useCachedData = true;
+const writeToFile = false;
+
 let getUserData, getSendData;
 if (useCachedData) {
   getUserData = gudL;
@@ -45,6 +47,19 @@ app.post('/sendData', async (req, res) => {
         sends.push(sendMap.get(key));
       }
       message = sends;
+
+      if (writeToFile && !useCachedData) {
+        console.log('writing to file')
+        const fs = require('fs');
+        const fileName = `cached-sends${new Date().toISOString().slice(0,19)}.txt`;
+        let writeMe = `export default ${JSON.stringify(message, undefined, 2)}`;
+        fs.writeFile(fileName, writeMe, err => {
+          if (err) throw err;
+          console.log('Sends Saved!');
+        })
+      }
+
+
     }
     catch(e) {
       console.error(e);
