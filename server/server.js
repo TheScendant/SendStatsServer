@@ -8,7 +8,7 @@ import {networkInit as gudN, localInit as gudL} from './getUserData';
 const app = express();
 app.use(express.json())
 
-const useCachedData = true;
+const useCachedData = false;
 const writeToFile = false;
 
 let getUserData, getSendData;
