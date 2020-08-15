@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -rf ./build && webpack --config webpack.config.server.js",
-    "build": "rm -rf ./build && webpack --config webpack.config.prod.js"
+    "build": "rm -rf ./build && webpack --config webpack.config.prod.js",
+    "prod": "node build/server.bundle.js"
   },
   "author": "Hayden M Nier",
   "license": "ISC",

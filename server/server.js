@@ -48,7 +48,7 @@ app.post('/sendData', async (req, res) => {
       }
       message = sends;
 
-      if (writeToFile && !useCachedData) {
+      /* if (writeToFile && !useCachedData) {
         console.log('writing to file')
         const fs = require('fs');
         const fileName = `cached-sends${new Date().toISOString().slice(0,19)}.txt`;
@@ -57,7 +57,7 @@ app.post('/sendData', async (req, res) => {
           if (err) throw err;
           console.log('Sends Saved!');
         })
-      }
+      } */
 
 
     }
