@@ -5,7 +5,8 @@
   "main": "jsIsBest.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm -rf ./build && webpack --config webpack.config.server.js"
+    "start": "rm -rf ./build && webpack --config webpack.config.server.js",
+    "build": "rm -rf ./build && webpack --config webpack.config.server.js"
   },
   "author": "Hayden M Nier",
   "license": "ISC",
