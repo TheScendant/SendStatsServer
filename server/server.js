@@ -42,23 +42,28 @@ app.post('/sendData', async (req, res) => {
     try {
       const [data, dataType] = getDataAndType(req.body);
       const sendMap = await getSendData(data, dataType);
+      const stars = getStarCount(sendMap);
+      
       const sends = [];
       for (const key of sendMap.keys()) {
         sends.push(sendMap.get(key));
       }
-      message = sends;
 
-      /* if (writeToFile && !useCachedData) {
+      if (writeToFile && !useCachedData) {
         console.log('writing to file')
         const fs = require('fs');
         const fileName = `cached-sends${new Date().toISOString().slice(0,19)}.txt`;
-        let writeMe = `export default ${JSON.stringify(message, undefined, 2)}`;
+        let writeMe = `export default ${JSON.stringify(sends, undefined, 2)}`;
         fs.writeFile(fileName, writeMe, err => {
           if (err) throw err;
           console.log('Sends Saved!');
         })
-      } */
-
+      }
+      
+      message = {
+        sends,
+        stars,
+      }
 
     }
     catch(e) {
