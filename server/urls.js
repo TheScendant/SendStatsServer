@@ -1,9 +1,8 @@
-const key = "111744118-7abbfddc21426215a14c10862548b379";
+const key = "200878297-91f728e3e3e9e66a5d63f1b933df2dd7";
 const mpURL = `https://www.mountainproject.com/data/`;
 const getTicks = `${mpURL}get-ticks?key=${key}`;
 const getRoutes = `${mpURL}get-routes?key=${key}`;
 const getUser = `${mpURL}get-user?key=${key}`;
-//const TheScendantURL = `https://www.mountainproject.com/data/get-ticks?userId=112023884&key=${key}`;
 
 export {
   getRoutes,
