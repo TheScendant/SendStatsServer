@@ -33,9 +33,10 @@ async function didYouSendThough(json) {
 async function getAllSendData(sends, sendMap) {
   const routeIds = sends.map(send => send.routeId);
   let x = 0, done = false;
-  // ask for 100 route details at a time
+  // ask for ROUTE_BATCH_SIZE route details at a time
+  const ROUTE_BATCH_SIZE = 100;
   while (!done) {
-    const currRoutes = routeIds.slice(x, x + 100);
+    const currRoutes = routeIds.slice(x, x + ROUTE_BATCH_SIZE);
     let currRoutesString = currRoutes.join(",");
     let currURL = `${getRoutes}&routeIds=${currRoutesString}`
     const currRouteData = await fetchAndJsonify(currURL);
@@ -54,7 +55,7 @@ async function getAllSendData(sends, sendMap) {
     if (x > routeIds.length) {
       done = true;
     }
-    x += 100;
+    x += ROUTE_BATCH_SIZE;
   }
   return sendMap;
 }
@@ -136,7 +137,6 @@ function getGradeMap(finalMap) {
 
 function getStarCount(finalMap) {
   let stars = 0;
-  // should I use reduce here?
   finalMap.forEach((send) => {
     stars += parseFloat(send.stars);
   });
