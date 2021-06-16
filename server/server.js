@@ -8,7 +8,7 @@ import cors from 'cors';
 const app = express();
 app.use(express.json())
 app.use(cors())
-app.options('*', cors())
+// app.options('*', cors())
 
 const useCachedData = true;
 const writeToFile = false;
@@ -22,6 +22,7 @@ if (useCachedData) {
   getSendData = gsdN;
 }
 
+app.options('/userData', cors())
 app.post('/userData', async (req, res) => {
   let message;
   try {
