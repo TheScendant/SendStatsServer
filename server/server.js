@@ -3,10 +3,11 @@ import 'babel-polyfill';
 import { allGradesInit, getStarCount, localInit as gsdL, networkInit as gsdN } from './getSendData.js';
 import { getDataAndType } from './utilities.js';
 import {networkInit as gudN, localInit as gudL} from './getUserData';
-
+import cors from 'cors';
 
 const app = express();
 app.use(express.json())
+app.use(cors())
 
 const useCachedData = true;
 const writeToFile = false;
