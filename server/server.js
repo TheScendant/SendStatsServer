@@ -44,6 +44,9 @@ app.post('/userData', async (req, res) => {
   })
 })
 
+app.get('/', async(req,res) => {
+  res.send({message: "hello"}) 
+});
 
 app.post('/sendData', async (req, res) => {
   let message;
