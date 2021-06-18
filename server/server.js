@@ -15,7 +15,8 @@ const options = {
   "origin": "*",
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
   "preflightContinue": true,
-  "optionsSuccessStatus": 204
+  "optionsSuccessStatus": 204,
+  "Access-Control-Allow-Origin": "*",
 }
 
 app.use(cors(options))
