@@ -10,8 +10,8 @@ const agent = new https.Agent({
  */
 async function fetchAndJsonify(url) {
   try {
-    return fetch(url,  { agent }).then(async (a) => {
-    // return fetch(url).then(async (a) => {
+    return fetch(url, { agent }).then(async (a) => {
+      // return fetch(url).then(async (a) => {
       const json = await a.json();
       return json;
     });
@@ -43,23 +43,23 @@ const microWeights = new Map([["-", 1], ["a", 2], ["a/b", 3], ["b", 4], ["b/c", 
 const getMicroRating = (grade) => microWeights.get(grade.match(/5\.\d+(.*)/)[1]); // matches anything after 5.numbers
 const getMacroRating = (grade) => parseInt(grade.match(/5\.(\d+)/)[1]); // matches the number after '5'
 const gradeSorter = (a, b) => {
-    const macroA = getMacroRating(a);
-    const macroB = getMacroRating(b);
-    if (macroA > macroB) {
-        return 1;
-    }
-    if (macroA < macroB) {
-        return -1;
-    }
-    let microA = getMicroRating(a) || 5.5;
-    let microB = getMicroRating(b) || 5.5;
-    if (microA > microB) {
-        return 1;
-    }
-    if (microA < microB) {
-        return -1;
-    }
-    return 0;
+  const macroA = getMacroRating(a);
+  const macroB = getMacroRating(b);
+  if (macroA > macroB) {
+    return 1;
+  }
+  if (macroA < macroB) {
+    return -1;
+  }
+  let microA = getMicroRating(a) || 5.5;
+  let microB = getMicroRating(b) || 5.5;
+  if (microA > microB) {
+    return 1;
+  }
+  if (microA < microB) {
+    return -1;
+  }
+  return 0;
 }
 
 export {

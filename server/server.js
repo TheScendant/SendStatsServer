@@ -2,7 +2,7 @@ import express from 'express';
 import 'babel-polyfill';
 import { allGradesInit, getStarCount, localInit as gsdL, networkInit as gsdN } from './getSendData.js';
 import { getDataAndType } from './utilities.js';
-import {networkInit as gudN, localInit as gudL} from './getUserData';
+import { networkInit as gudN, localInit as gudL } from './getUserData';
 import cors from 'cors';
 
 const app = express();
@@ -36,7 +36,7 @@ app.post('/userData', async (req, res) => {
     const [data, dataType] = getDataAndType(req.body);
     const userData = await getUserData(data, dataType);
     message = userData;
-  } catch(e) {
+  } catch (e) {
     res.status(500);
     message = "Error fetching user data";
   }
@@ -45,8 +45,8 @@ app.post('/userData', async (req, res) => {
   })
 })
 
-app.get('/', async(req,res) => {
-  res.send({message: "hello"}) 
+app.get('/', async (req, res) => {
+  res.send({ message: "hello" })
 });
 
 app.post('/sendData', async (req, res) => {
@@ -56,7 +56,7 @@ app.post('/sendData', async (req, res) => {
       const [data, dataType] = getDataAndType(req.body);
       const sendMap = await getSendData(data, dataType);
       const stars = getStarCount(sendMap);
-      
+
       const sends = [];
       for (const key of sendMap.keys()) {
         sends.push(sendMap.get(key));
@@ -65,21 +65,21 @@ app.post('/sendData', async (req, res) => {
       if (writeToFile && !useCachedData) {
         console.log('writing to file')
         const fs = require('fs');
-        const fileName = `cached-sends${new Date().toISOString().slice(0,19)}.txt`;
+        const fileName = `cached-sends${new Date().toISOString().slice(0, 19)}.txt`;
         let writeMe = `export default ${JSON.stringify(sends, undefined, 2)}`;
         fs.writeFile(fileName, writeMe, err => {
           if (err) throw err;
           console.log('Sends Saved!');
         })
       }
-      
+
       message = {
         sends,
         stars,
       }
 
     }
-    catch(e) {
+    catch (e) {
       console.error(e);
       message = "Error fetching send stats";
       res.status(500);
