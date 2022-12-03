@@ -8,7 +8,7 @@ import cors from 'cors';
 const app = express();
 app.use(express.json())
 
-const useCachedData = true;
+const useCachedData = false;
 const writeToFile = false;
 
 const options = {

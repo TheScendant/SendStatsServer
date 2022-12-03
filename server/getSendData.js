@@ -18,7 +18,7 @@ async function didYouSendThough(json) {
       if (leadStyle && sendTypes.includes(leadStyle.toLowerCase())) {
         sends.push(tick);
       }
-    } else if (style === 'Solo') {
+    } else if (style === 'Solo' || style === 'Send') {
       sends.push(tick);
     }
   }
